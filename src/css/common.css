@@ -1,0 +1,52 @@
+/*---algemeen*/
+.clr:after,
+.portfolio:after,
+.portfolio-item:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clr,
+.portfolio,
+.portfolio-item {
+	zoom: 1;
+}
+.clear {
+	clear: both;
+}
+.smallfont {
+	font-size: 9em;
+}
+.grid-container {
+	display: grid;
+	max-width: 100%;
+	/* grid-auto-flow: column; */
+	/* grid-auto-columns: 100px; */
+}
+
+.flex-container {
+	/* We first create a flex layout context */
+	display: flex;
+
+	/* Then we define the flow direction 
+	   and if we allow the items to wrap 
+	 * Remember this is the same as:
+	 * flex-direction: row;
+	 * flex-wrap: wrap;
+	 */
+	flex-flow: row wrap;
+
+	/* Then we define how is distributed the remaining space */
+	justify-content: space-around;
+
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/*---MINICLASSES*/
+.clear {
+	clear: both;
+}
