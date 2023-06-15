@@ -1,0 +1,30 @@
+.container {
+	max-width: var(--container-width);
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+/* responsive overrides */
+@media (--viewport-l) {
+	aside .grid-container {
+	}
+}
+@media (--viewport-s) {
+	#hi .logo img {
+		height: 220px;
+	}
+}
+@media (--viewport-xs) {
+	#container,
+	.container {
+		min-width: 320px;
+	}
+	.past-article-intro {
+		padding-right: 0;
+		align-self: auto;
+	}
+	article.grid-container {
+		display: block;
+		grid-template-columns: auto;
+	}
+}

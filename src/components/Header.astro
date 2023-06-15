@@ -1,0 +1,40 @@
+---
+import HeaderNav from '../components/HeaderNav.astro';
+import HeaderNavAccessibility from '../components/HeaderNavAccessibility.astro';
+
+
+---
+
+<header id="header-page">
+	<div class="scroll-line"></div>
+	<div class="container" id="nav-container">
+		<HeaderNav />
+		<HeaderNavAccessibility />
+	</div>
+</header>
+
+<style>
+	#header-page {
+		position: sticky;
+		height: 3rem;
+		padding-bottom: 0.5rem;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		border-top: 10px solid #2a2a2a;
+		background: linear-gradient(
+			180deg,
+			#0080e6 0%,
+			#0080e6 40%,
+			#2090ec 80%,
+			#0080e6 100%
+		);
+	}
+	.scroll-line {
+		background: white;
+		background: linear-gradient(orange, rgb(201, 133, 8));
+		height: 10px;
+		margin-top: -10px;
+		width:0
+	}
+</style>
