@@ -1,6 +1,7 @@
 #nav-container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 #nav-top {
 	display: flex; /* justify-content: space-between; */
@@ -11,7 +12,7 @@
 	position: absolute;
 	display: block;
 	width: 2rem;
-	margin-top: -1rem;
+	margin-top: -1.9rem;
 	background: rgba(255, 255, 255, 0.5);
 	background: rgba(255, 255, 255, 1);
 	padding: 0.3rem;
@@ -30,8 +31,12 @@
 }
 #nav-accessibility {
 	display: flex;
-
 	padding-top: 0;
+	& > div,
+	label {
+		display: flex;
+		align-items: center;
+	}
 	& a {
 		display: block;
 		height: fit-content;
@@ -41,6 +46,9 @@
 	& img {
 		max-height: 22px;
 		width: auto;
+	}
+	& svg {
+		/* display: none; */
 	}
 }
 
@@ -56,9 +64,15 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-left: 4rem;
+	@media (--viewport-s) {
+		padding-left: 0;
+	}
+	line-height: 1em;
+	height: 1em;
 	& li {
 		display: inline-block;
 		padding: 0 0.8rem;
+		height: max-content;
 		@media (--viewport-m) {
 			padding: 0 0.6rem;
 		}
