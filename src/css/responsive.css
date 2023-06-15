@@ -3,6 +3,12 @@
 	margin: 0 auto;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	@media (--viewport-m) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 /* responsive overrides */
 @media (--viewport-l) {
@@ -15,8 +21,7 @@
 	}
 }
 @media (--viewport-xs) {
-	#container,
-	.container {
+	#container {
 		min-width: 320px;
 	}
 	.past-article-intro {

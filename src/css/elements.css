@@ -136,3 +136,7 @@ li {
 #nav-top a {
 	text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
 }
+main {
+	max-width: 100%;
+	overflow-x: hidden;
+}
