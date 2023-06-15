@@ -1,7 +1,7 @@
 #section-skills-1 {
 	background-color: lime;
 }
-#section-hi {
+#Hi {
 	background: rgba(255, 255, 255, 0.7);
 	background: linear-gradient(
 		180deg,
@@ -30,7 +30,7 @@
 	}
 }
 
-#section-intro2 {
+#Future {
 	background: linear-gradient(
 		180deg,
 		#cadcfa 0%,
@@ -40,14 +40,14 @@
 	);
 }
 
-#section-past {
+#Past {
 	background: white;
 	& .container {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 	}
 }
-#section-past .intro {
+#Past .intro {
 	background: rgba(200, 240, 240, 0.1);
 }
 #past-1 {
@@ -79,7 +79,7 @@
 	);
 }
 
-#section-skills {
+#Skills {
 	background: linear-gradient(
 		180deg,
 		#d8dac5 0%,
@@ -91,28 +91,28 @@
 
 /* #skills-1{background:#fff} */
 
-#section-tools {
+#Tools {
 	background: linear-gradient(180deg, #d8dad8 0%, #e9ebe9 80%, #d8dad8 100%);
 }
 
-#section-tools ul {
+#Tools ul {
 	display: grid;
 }
-#section-tools li {
+#Tools li {
 	display: flex;
 	border-radius: 0.5rem;
 	overflow: hidden;
 	align-items: center;
 }
-#section-tools img {
+#Tools img {
 	display: block;
 	max-height: 3rem;
 }
-#section-tools .flex-container {
+#Tools .flex-container {
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 }
-#section-tools .flex-container img {
+#Tools .flex-container img {
 	margin: 5px 1.5rem 1rem;
 	width: auto;
 	height: 75px;
