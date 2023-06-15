@@ -8,14 +8,21 @@
 }
 
 #homelink {
+	position: absolute;
 	display: block;
-	width: 4rem;
-	margin-top: 0;
-	margin-bottom: -4rem;
+	width: 2rem;
+	margin-top: -1rem;
+	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 1);
+	padding: 0.3rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+	box-shadow: rgba(0, 0, 0, 0.2) -0px -0px 5px;
+	border: 1px solid white;
 	& > img {
 		display: block;
 		max-width: 100%;
 		height: auto;
+		object-fit: contain;
 	}
 	@media (--viewport-s) {
 		display: none;
@@ -47,6 +54,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	padding-left: 4rem;
 	& li {
 		display: inline-block;
 		padding: 0 0.8rem;
