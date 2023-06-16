@@ -7,7 +7,6 @@
 	border: 0;
 	border-color: transparent;
 	box-shadow: none;
-	/* border:0 !important; */
 	border-radius: 6px;
 	padding: 2px;
 	& div {
@@ -117,8 +116,6 @@ article.grid-container.reverse {
 			padding-left: 0;
 		}
 	}
-	& p {
-	}
 }
 article.grid-container {
 	grid-template-columns: 50% 50%;
@@ -134,30 +131,22 @@ article.grid-container {
 				gap: 1.375rem;
 			}
 			@media (--viewport-l) {
-				/* grid-template-columns: repeat(2, minmax(0, 1fr)); */
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
 				grid-auto-rows: minmax(auto, 6rem);
 				gap: 1.375rem;
-				/* grid-template-columns:auto auto auto;
-		grid-template-rows: 120px 120px; */
-				/* background: red; */
 			}
 			@media (--viewport-m) {
 				grid-template-columns: repeat(6, minmax(0, 1fr));
 				grid-template-rows: auto;
 				gap: 0.5rem;
-				/* background: lime; */
 			}
 			@media (--viewport-s) {
 			}
 			@media (--viewport-xs) {
-				/* grid-template-columns:auto auto auto;
-		grid-template-rows:  auto auto; */
-				background: yellow;
-				gap: 0;
+				gap: 0.5rem;
 				grid-template-columns: repeat(3, 1fr);
-				grid-auto-rows: minmax(60px, auto);
+				grid-auto-rows: minmax(85px, 85px);
 			}
 		}
 	}
@@ -176,12 +165,12 @@ article.grid-container {
 			transition-property: border-radius, box-shadow, border-color;
 			transition-duration: 0.3s;
 			transition-timing-function: ease-in-out;
-			/* box-shadow: rgba(255, 255, 255, 0) 0 0 0.3rem; */
 			border: 1px solid white;
+			@media (--viewport-xs) {
+				height: 5rem;
+			}
 			&:hover {
 				border-radius: 0;
-				/* box-shadow: rgba(0, 0, 0, 0.1) 0 0 0.3rem; */
-				/* border-color: rgba(0, 0, 0, 0.1); */
 			}
 		}
 	}
@@ -205,4 +194,53 @@ article.grid-container {
 			}
 		}
 	}
+}
+#header-page,
+section,
+#sun-svg,
+#moon-svg {
+	transition-property: border-color, background-color, transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+#sun-svg,
+#moon-svg {
+	fill: white;
+	cursor: pointer;
+}
+
+#sun-svg:active,
+#moon-svg:active {
+	transform: rotate(12deg);
+}
+#theme-btn {
+	position: relative;
+	width: 25px;
+	height: 24px;
+	& svg {
+		left: 0;
+		position: absolute;
+		transition: opacity 0.3s ease-in-out;
+	}
+}
+#theme-btn > div {
+	position: absolute;
+	top: 0;
+}
+#header-page {
+	position: sticky;
+	height: 3rem;
+	padding-bottom: 0.5rem;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 10px 0 0 0;
+}
+.scroll-line {
+	background: white;
+	background: linear-gradient(orange, rgb(201, 133, 8));
+	height: 10px;
+	margin-top: -10px;
+	width: 0;
 }

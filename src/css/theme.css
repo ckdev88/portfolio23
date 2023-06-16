@@ -1,0 +1,201 @@
+html[data-theme="dark"] {
+	& #sun-svg {
+		opacity: 0;
+	}
+	& #moon-svg {
+		opacity: 1;
+	}
+
+	& #Hi,
+	#Past {
+		background: linear-gradient(
+			180deg,
+			#051511 0%,
+			#051511 85%,
+			#152521 100%
+		);
+	}
+	& body,
+	td,
+	textarea,
+	pre,
+	input,
+	h3 {
+		color: #ccc;
+	}
+	& h1,
+	h2,
+	h3,
+	p,
+	li {
+		text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+	}
+	& #header-page {
+		border-color: #2a2a2a;
+		background: linear-gradient(
+			180deg,
+			#0040a6 0%,
+			#0040a6 40%,
+			#0050ac 80%,
+			#0040a6 100%
+		);
+	}
+	& #Future {
+		background: linear-gradient(
+			180deg,
+			#272527 0%,
+			#161416 80%,
+			#272527 100%
+		);
+	}
+	& #Past {
+		background: linear-gradient(
+			180deg,
+			#272527 0%,
+			#161416 80%,
+			#272527 100%
+		);
+	}
+	& #past-1 {
+		background: linear-gradient(
+			180deg,
+			#250c1d 0%,
+			#250c1d 80%,
+			#301227 100%
+		);
+	}
+	& #past-2 {
+		background: linear-gradient(
+			180deg,
+			#2c2415 0%,
+			#2c2415 80%,
+			#383122 100%
+		);
+	}
+	#past-3 {
+		background: linear-gradient(
+			180deg,
+			#172929 0%,
+			#172929 80%,
+			#1e3030 100%
+		);
+	}
+
+	#Skills {
+		background: linear-gradient(
+			180deg,
+			#27253a 0%,
+			#27253a 40%,
+			#262531 80%,
+			#2c2a3f 100%
+		);
+	}
+
+	#Tools {
+		background: linear-gradient(
+			180deg,
+			#272527 0%,
+			#161416 80%,
+			#272527 100%
+		);
+	}
+}
+html[data-theme="light"] {
+	& #sun-svg {
+		opacity: 1;
+	}
+	& #moon-svg {
+		opacity: 0;
+	}
+
+	& body,
+	td,
+	textarea,
+	pre,
+	input,
+	h3 {
+		color: #333;
+	}
+
+	& h1,
+	h2,
+	h3,
+	p,
+	li {
+		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
+	}
+
+	& #header-page {
+		border-color: #2a2a2a;
+		background: linear-gradient(
+			180deg,
+			#0080e6 0%,
+			#0080e6 40%,
+			#2090ec 80%,
+			#0080e6 100%
+		);
+	}
+	& #Future {
+		background: linear-gradient(
+			180deg,
+			#cadcfa 0%,
+			#cadcfa 40%,
+			#d5e7fa 80%,
+			#c8daf8 100%
+		);
+	}
+
+	& #Hi,
+	#Past {
+		background: linear-gradient(
+			180deg,
+			#faeaee 0%,
+			#faeaee 85%,
+			#eadade 100%
+		);
+	}
+	#past-1 {
+		background: linear-gradient(
+			180deg,
+			#daf3e2 0%,
+			#daf3e2 80%,
+			#cfedd8 100%
+		);
+	}
+	#past-2 {
+		/* background: rgba(125, 140, 180, 0.1); */
+		background: linear-gradient(
+			180deg,
+			#d3dbea 0%,
+			#d3dbea 80%,
+			#c7cedd 100%
+		);
+	}
+	#past-3 {
+		background: linear-gradient(
+			180deg,
+			#e8d6d6 0%,
+			#e8d6d6 80%,
+			#e1cfcf 100%
+		);
+	}
+
+	#Skills {
+		background: linear-gradient(
+			180deg,
+			#d8dac5 0%,
+			#d8dac5 40%,
+			#d9dace 80%,
+			#d3d5c0 100%
+		);
+	}
+
+	#Tools {
+		background: linear-gradient(
+			180deg,
+			#d8dad8 0%,
+			#e9ebe9 80%,
+			#d8dad8 100%
+		);
+	}
+}

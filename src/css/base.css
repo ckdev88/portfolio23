@@ -4,30 +4,6 @@
 @custom-media --viewport-s (max-width: 767.98px);
 @custom-media --viewport-xs (max-width: 575.98px);
 
-@media (--viewport-l) {
-	body {
-		background: lime;
-	}
-}
-
-@media (--viewport-m) {
-	body {
-		background: red;
-	}
-}
-
-@media (--viewport-s) {
-	body {
-		background: blue;
-	}
-}
-
-@media (--viewport-xs) {
-	body {
-		background: hotpink;
-	}
-}
-
 :root {
 	@media (--viewport-xl) {
 		--container-width: 1128px;

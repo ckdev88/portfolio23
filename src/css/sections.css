@@ -32,18 +32,7 @@ section {
 	}
 }
 
-#Future {
-	background: linear-gradient(
-		180deg,
-		#cadcfa 0%,
-		#cadcfa 40%,
-		#d5e7fa 80%,
-		#c8daf8 100%
-	);
-}
-
 #Past {
-	background: #eac8b9;
 	& .container {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
@@ -56,51 +45,6 @@ section {
 			padding-right: 1rem;
 		}
 	}
-}
-#Past .intro {
-	background: rgba(200, 240, 240, 0.1);
-}
-#past-1 {
-	background: linear-gradient(
-		180deg,
-		#daf3e2 0%,
-		#daf3e2 40%,
-		#daf3e2 80%,
-		#cfedd8 100%
-	);
-}
-#past-2 {
-	/* background: rgba(125, 140, 180, 0.1); */
-	background: linear-gradient(
-		180deg,
-		#d3dbea 0%,
-		#d3dbea 40%,
-		#d3dbea 80%,
-		#c7cedd 100%
-	);
-}
-#past-3 {
-	background: linear-gradient(
-		180deg,
-		#e8d6d6 0%,
-		#e8d6d6 40%,
-		#e8d6d6 80%,
-		#e1cfcf 100%
-	);
-}
-
-#Skills {
-	background: linear-gradient(
-		180deg,
-		#d8dac5 0%,
-		#d8dac5 40%,
-		#d9dace 80%,
-		#d3d5c0 100%
-	);
-}
-
-#Tools {
-	background: linear-gradient(180deg, #d8dad8 0%, #e9ebe9 80%, #d8dad8 100%);
 }
 
 #Tools ul {
