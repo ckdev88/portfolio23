@@ -2,6 +2,7 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const logoSrc='/img/ckdev-logo.png';
 ---
 
 <section id=Hi><a name={t('nav.Hi')}></a>
@@ -13,7 +14,7 @@ const t = useTranslations(lang);
 			Usability and a nice experience always go first. </p>
 		</div>
 		<div class="grid-item logo">
-			<img src="../../img/ckdev-logo.png" alt="Crs Kester, UI Developer, Portfolio"/>
+			<img src={logoSrc} alt="Cors Kester, UI Developer, Portfolio"/>
 		</div>
 	</div>
 </section>
