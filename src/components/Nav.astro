@@ -1,0 +1,17 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+import NavItem from './NavItem.astro'
+---
+<nav id="nav-top" role="navigation" aria-label="Hoofdmenu">
+<a href="./v2023" title="Terug naar de homepage" id="homelink"><img src="../img/ckdev-logo.png" alt="Cor Kester, UI Developer, Portfolio"/></a>
+	<ul id="pages">
+		<NavItem title={t('nav.Hi')} />
+		<NavItem title={t('nav.Future')} />
+		<NavItem title={t('nav.Past')} />
+		<NavItem title={t('nav.Skills')} />
+		<NavItem title={t('nav.Tools')} />
+		<NavItem title={t('nav.Contact')} />
+	</ul>
+</nav>

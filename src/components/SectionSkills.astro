@@ -1,7 +1,11 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 import SectionSkillsItem from "./SectionSkillsItem.astro";
 ---
-<section id="Skills">
+<section id="Skills"><a name={t('nav.Skills')}></a>
 	<div class="intro">
 		<div class="container">
 			<h2>Skills</h2>

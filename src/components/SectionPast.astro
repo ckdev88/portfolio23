@@ -1,7 +1,11 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 import SectionPastItem from './SectionPastItem.astro';
 ---
-<section id="Past">
+<section id="Past"><a name={t('nav.Past')}></a>
 	<div class="intro">
 		<div class="container">
 			<h2>As UI developer</h2>
@@ -20,12 +24,12 @@ import SectionPastItem from './SectionPastItem.astro';
 				</div>
 				<aside class="thumbs" aria-hidden="true">
 					<div class="grid-container">
-						<SectionPastItem img="img/clever-strategy-logo.png" name="Clever Strategy" />
-						<SectionPastItem img="img/depend-logo.png" name="Depend"/>
-						<SectionPastItem img="img/bruynzeel-keukens-logo.png" name="Bruynzeel Keukens"/>
-						<SectionPastItem img="img/lucardi-logo.webp" name="Lucardi"/>
-						<SectionPastItem img="img/optitrade-logo.svg" name="Optitrade"/>
-						<SectionPastItem img="img/total-logo.png" name="Total"/>
+						<SectionPastItem img="../img/clever-strategy-logo.png" name="Clever Strategy" />
+						<SectionPastItem img="../img/depend-logo.png" name="Depend"/>
+						<SectionPastItem img="../img/bruynzeel-keukens-logo.png" name="Bruynzeel Keukens"/>
+						<SectionPastItem img="../img/lucardi-logo.webp" name="Lucardi"/>
+						<SectionPastItem img="../img/optitrade-logo.svg" name="Optitrade"/>
+						<SectionPastItem img="../img/total-logo.png" name="Total"/>
 					</div>
 				</aside>
 			</article>
@@ -41,12 +45,12 @@ import SectionPastItem from './SectionPastItem.astro';
 				</div>
 				<aside class="thumbs" aria-hidden="true">
 					<div class="grid-container">
-						<SectionPastItem img="img/clever-strategy-logo.png" name="Clever Strategy" />
-						<SectionPastItem img="img/depend-logo.png" name="Depend"/>
-						<SectionPastItem img="img/bruynzeel-keukens-logo.png" name="Bruynzeel Keukens"/>
-						<SectionPastItem img="img/lucardi-logo.webp" name="Lucardi"/>
-						<SectionPastItem img="img/optitrade-logo.svg" name="Optitrade"/>
-						<SectionPastItem img="img/total-logo.png" name="Total"/>
+						<SectionPastItem img="../img/clever-strategy-logo.png" name="Clever Strategy" />
+						<SectionPastItem img="../img/depend-logo.png" name="Depend"/>
+						<SectionPastItem img="../img/bruynzeel-keukens-logo.png" name="Bruynzeel Keukens"/>
+						<SectionPastItem img="../img/lucardi-logo.webp" name="Lucardi"/>
+						<SectionPastItem img="../img/optitrade-logo.svg" name="Optitrade"/>
+						<SectionPastItem img="../img/total-logo.png" name="Total"/>
 					</div>
 				</aside>			
 			</article>

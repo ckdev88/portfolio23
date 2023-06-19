@@ -1,0 +1,15 @@
+---
+const {title} = Astro.props;
+
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+// const { href, title, body } = Astro.props; -->
+import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<li><a href={`/${lang}/#${title}`} title={`${t('lt.JumpTo')} ${title}`}>{title}</a></li>
