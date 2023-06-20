@@ -239,7 +239,7 @@ section,
 }
 .scroll-line {
 	background: white;
-	background: linear-gradient(orange, rgb(201, 133, 8));
+	background: linear-gradient(#cf5c1e 0%, #d86b30 75%, #d15c1d 100%);
 	height: 10px;
 	margin-top: -10px;
 	width: 0;

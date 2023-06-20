@@ -1,0 +1,115 @@
+html[data-theme="dark"] {
+	& #theme-backdrop {
+		background-color: #1a0d0a;
+		background-color: #190d0a;
+	}
+	& #sun-svg {
+		opacity: 0;
+	}
+	& #moon-svg {
+		opacity: 1;
+	}
+
+	& body,
+	td,
+	textarea,
+	pre,
+	input,
+	h3 {
+		color: #ccc;
+	}
+
+	& h1,
+	h2,
+	h3,
+	p,
+	li {
+		text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+	}
+
+	& #header-page {
+		border-color: #2a2a2a;
+		background: linear-gradient(
+			180deg,
+			#0040a6 0%,
+			#0040a6 40%,
+			#0050ac 80%,
+			#0040a6 100%
+		);
+	}
+
+	& #Hi {
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.05) 0%,
+			rgba(0, 0, 0, 0.05) 80%,
+			rgba(0, 16, 12, 0) 100%
+		);
+	}
+	& #Future {
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.05) 0%,
+			rgba(0, 0, 0, 0.05) 80%,
+			rgba(0, 16, 12, 0) 100%
+		);
+	}
+	/* & #Past {
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 0) 85%,
+			rgba(255, 255, 255, 0.3) 100%
+		);
+	} */
+	& #past-1 {
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 0) 80%,
+			rgba(0, 0, 0, 0.4) 100%
+		);
+	}
+	& #past-2 {
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.4) 0%,
+			rgba(255, 255, 255, 0) 80%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		/* #2c2415 0%,
+			#2c2415 80%,
+			#383122 100% */
+	}
+	& #past-3 {
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 0) 80%,
+			rgba(0, 0, 0, 0.4) 100%
+		);
+	}
+
+	& #Skills {
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.4) 0%,
+			rgba(255, 255, 255, 0) 80%,
+			rgba(255, 255, 255, 0) 100%
+		);
+	}
+
+	& #Tools {
+		border-color: #2a2a2a;
+		background: linear-gradient(
+			180deg,
+			/* #0040a6 0%,
+			#0040a6 40%,
+			#0050ac 80%,
+			#0040a6 100% */
+				rgb(189, 82, 25) 0%,
+			#e36521 25%,
+			rgb(189, 82, 25) 100%
+		);
+	}
+}
