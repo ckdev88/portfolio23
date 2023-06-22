@@ -1,7 +1,15 @@
 <html>
 <head>
-	<meta http-equiv="refresh" content="0; url=/en/" />
+	<title>even wachten...</title>
 </head>
 <body>
+	<script>
+		window.onload = function(){
+			console.log(window.location.href);
+			console.log('window.location.href :>> ', window.location.href);
+			var url=window.location.href;
+			return window.location.href=url+"en/";
+		}
+	</script>
 </body>
 </html>

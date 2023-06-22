@@ -12,18 +12,20 @@
 	position: absolute;
 	display: block;
 	width: 2rem;
-	margin-top: -1.9rem;
-	background: rgba(255, 255, 255, 0.5);
-	background: rgba(255, 255, 255, 1);
-	padding: 0.3rem;
-	border-radius: 0 0 0.5rem 0.5rem;
+	margin-top: -1.7rem;
+	padding: 0;
+	border-radius: 0 0 0.5rem 0.25rem;
 	box-shadow: rgba(0, 0, 0, 0.2) -0px -0px 5px;
 	border: 1px solid white;
-	& > img {
+	background: linear-gradient(180deg, #f07511 50%, #cf660f 100%);
+
+	& > svg {
 		display: block;
 		max-width: 100%;
 		height: auto;
 		object-fit: contain;
+		background: linear-gradient(180deg #f07511 50%, #000 100%);
+		fill: white;
 	}
 	@media (--viewport-s) {
 		display: none;
@@ -61,11 +63,10 @@
 	margin: 0;
 }
 #pages {
-	font-weight: 1.1rem;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding-left: 4rem;
+	padding-left: 1rem;
 	@media (--viewport-s) {
 		padding-left: 0;
 	}

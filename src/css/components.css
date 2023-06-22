@@ -236,6 +236,7 @@ section,
 	z-index: 1;
 	border-style: solid;
 	border-width: 10px 0 0 0;
+	z-index: 3;
 }
 .scroll-line {
 	background: white;
