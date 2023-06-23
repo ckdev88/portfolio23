@@ -16,7 +16,7 @@ html[data-theme="dark"] {
 	pre,
 	input,
 	h3 {
-		color: #ccc;
+		color: #eee;
 	}
 
 	& h1,
@@ -31,7 +31,9 @@ html[data-theme="dark"] {
 		border-color: #2a2a2a;
 		background: linear-gradient(
 			180deg,
-			#0040a6 0%,
+			#2a2a2a 0%,
+			#2a2a2a 0.5rem,
+			#0040a6 0.5rem,
 			#0040a6 40%,
 			#0050ac 80%,
 			#0040a6 100%

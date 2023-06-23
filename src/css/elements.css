@@ -11,15 +11,13 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 66px;
 }
-body {
-	height: 99%;
-}
 body,
 td,
 textarea,
 pre,
 input {
-	font-family: "Outfit-Regular", sans-serif;
+	font-family: "Outfit", sans-serif;
+	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.7em;
 }
@@ -36,27 +34,27 @@ code {
 	font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
 		DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
+h1,
+h2,
+h3 {
+	font-family: "Outfit"; /* Outfit-ExtraBold, bold */
+	font-weight: 800;
+}
 h1 {
 	font-size: 3rem;
 	line-height: 1.1em;
-	font-weight: bold;
 	margin-bottom: 0.4em;
-	font-family: "Outfit-ExtraBold";
 	width: 100%;
 }
 h2 {
 	font-size: 2.4rem;
 	line-height: 1.1em;
-	font-weight: bold;
 	margin-bottom: 0.4em;
-	font-family: "Outfit-ExtraBold";
 }
 h3 {
 	font-size: 1.6rem;
-	font-weight: bold;
 	margin-top: 0;
 	padding-bottom: 1em;
-	font-family: "Outfit-ExtraBold";
 }
 h3[onclick]:hover {
 	cursor: pointer;

@@ -3,7 +3,6 @@ import Logo from '../components/Logo.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 ---
 
 <section id=Hi><a name={t('nav.Hi')}></a>

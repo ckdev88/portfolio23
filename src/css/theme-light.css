@@ -28,10 +28,11 @@ html[data-theme="light"] {
 	}
 
 	& #header-page {
-		border-color: #2a2a2a;
 		background: linear-gradient(
 			180deg,
-			#0080e6 0%,
+			#2a2a2a 0%,
+			#2a2a2a 0.5rem,
+			#0080e6 0.5rem,
 			#0080e6 40%,
 			#2090ec 80%,
 			#0080e6 100%
