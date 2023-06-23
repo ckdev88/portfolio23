@@ -2,17 +2,13 @@
 import Nav from '../components/Nav.astro';
 import HeaderNavAccessibility from '../components/HeaderNavAccessibility.astro';
 
-
+const {lang} = Astro.props;
 ---
 
 <header id="header-page">
 	<div class="scroll-line"></div>
 	<div class="container" id="nav-container">
-		<Nav />
-		<HeaderNavAccessibility />
+		<Nav lang={lang}/>
+		<HeaderNavAccessibility lang={lang} />
 	</div>
 </header>
-
-<style>
-	
-</style>

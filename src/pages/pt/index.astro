@@ -7,11 +7,13 @@ import SectionPast from '../../components/SectionPast.astro';
 import SectionSkills from '../../components/SectionSkills.astro';
 import SectionTools from '../../components/SectionTools.astro';
 import Footer from '../../components/Footer.astro';
+
+const lang="pt";
 ---
 
-<Layout title="Cors Kester, UI Developer." lang="pt">
+<Layout title="Cors Kester, UI Developer." lang={lang}>
 	<div id="container">
-		<Header />
+		<Header lang={lang}/>
 		<main>
 			<SectionHi />
 			<SectionFuture />
