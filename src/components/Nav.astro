@@ -3,10 +3,11 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 import NavItem from './NavItem.astro'
-const logoSrc='/img/ck-logo-v3.svg';
+// const logoSrc='../img/ck-logo-1.svg';
+const logoSrc='../img/ck-logo-13.svg';
 ---
 <nav id="nav-top" role="navigation" aria-label="Hoofdmenu">
-	<a href="./" title="Terug naar de homepage" id="homelink"><img src="../img/ck-logo-wit.svg" alt=""/></a>
+	<a href="./" title="Terug naar de homepage" id="homelink"><img src={logoSrc} alt="" height="32"/></a>
 	<ul id="pages">
 		<NavItem title={t('nav.Hi')} lang={lang}/>
 		<NavItem title={t('nav.Future')} lang={lang}/>
