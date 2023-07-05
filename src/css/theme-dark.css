@@ -101,17 +101,13 @@ html[data-theme="dark"] {
 		);
 	}
 
-	& #Tools {
+	/* & #Tools {
 		border-color: #2a2a2a;
 		background: linear-gradient(
 			180deg,
-			/* #0040a6 0%,
-			#0040a6 40%,
-			#0050ac 80%,
-			#0040a6 100% */
-				rgb(189, 82, 25) 0%,
+			rgb(189, 82, 25) 0%,
 			#e36521 25%,
 			rgb(189, 82, 25) 100%
 		);
-	}
+	} */
 }

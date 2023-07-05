@@ -1,0 +1,137 @@
+#skilltree {
+	z-index: 2;
+
+	& .li-level-2 {
+		& h4 {
+			@media (--viewport-m) {
+				/* hide, but not for screen readers */
+				position: absolute;
+				overflow: hidden;
+				width: 0;
+				height: 0;
+			}
+		}
+	}
+}
+
+div.grid-item.skilltree {
+	position: relative;
+}
+img.skilltree {
+	max-width: 100%;
+	object-fit: contain;
+	position: relative;
+	z-index: 1;
+}
+#skilltree ul,
+#skilltree li {
+	margin: 0;
+}
+#skilltree {
+	& > li {
+		text-align: left;
+		font-size: 1.2rem;
+		font-weight: bold;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		/* margin-bottom: 1rem; */
+	}
+}
+#skilltree > li > ul > li {
+	font-size: 1rem;
+	font-weight: normal;
+	font-style: italic;
+}
+li.fundamentals {
+	font-style: italic;
+	font-weight: normal;
+}
+#skilltree h3 {
+	text-align: left;
+}
+#skilltree {
+	& .li-level-1 {
+		padding-top: 1rem;
+		grid-template-columns: 1fr 5fr;
+		border-top: 1px dotted rgba(255, 255, 255, 0.2);
+		gap: 2rem;
+		@media (--viewport-xl) {
+			display: grid;
+		}
+		& .tool-item {
+			max-width: 10rem;
+			& img {
+				display: block;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+div.grid-item.skilltree {
+	position: relative;
+}
+img.skilltree {
+	max-width: 100%;
+	object-fit: contain;
+	position: relative;
+	z-index: 1;
+}
+#skilltree ul,
+#skilltree li {
+	margin: 0;
+}
+#skilltree {
+	& > li {
+		text-align: left;
+		font-size: 1.2rem;
+		font-weight: bold;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+#skilltree > li > ul > li {
+	font-size: 1rem;
+	font-weight: normal;
+	font-style: italic;
+}
+li.fundamentals {
+	font-style: italic;
+	font-weight: normal;
+}
+#skilltree h3 {
+	text-align: left;
+}
+#skilltree {
+	& .li-level-1 {
+		grid-template-columns: 1fr 5fr;
+		border-top: 1px dotted rgba(255, 255, 255, 0.2);
+		&:first-child {
+			border-top: 0;
+		}
+		@media (--viewport-xl) {
+			display: grid;
+		}
+	}
+	& .ul-level-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	&h4 {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+#skilltree {
+	& .ul-level-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	& h4 {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+/* the 13th floor */

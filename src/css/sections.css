@@ -38,36 +38,3 @@ section {
 		}
 	}
 }
-
-#Tools ul {
-	display: grid;
-}
-#Tools li {
-	display: flex;
-	border-radius: 0.5rem;
-	overflow: hidden;
-	align-items: center;
-}
-#Tools img {
-	display: block;
-	max-height: 3rem;
-}
-#Tools .flex-container {
-	margin-left: -1.5rem;
-	margin-right: -1.5rem;
-}
-#Tools .flex-container img {
-	margin: 5px 1.5rem 1rem;
-	width: auto;
-	height: 75px;
-	line-height: 75px;
-	color: white;
-	font-weight: bold;
-	text-align: center;
-	border-radius: 8px;
-	@media (--viewport-m) {
-		height: 3rem;
-		line-height: 3rem;
-		margin: 0.3rem 1rem;
-	}
-}
