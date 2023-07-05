@@ -35,3 +35,15 @@
 .clear {
 	clear: both;
 }
+.dnone {
+	display: none;
+}
+.dblock {
+	display: block;
+}
+/* .hidden {
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+} */

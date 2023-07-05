@@ -6,12 +6,10 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 <section id="Skills"><a name={t('nav.Skills')}></a>
-	<div class="skills-container container">
-		<div class="grid-item skilltree">
+	<div class="container">
+
+		<!-- <div class="grid-item skilltree"> -->
 			<Skilltree /> 
-		</div>
-		<div class="grid-item tools">
-			<Tools /> 
-		</div>
+		<!-- </div> -->
 	</div>
 </section>
