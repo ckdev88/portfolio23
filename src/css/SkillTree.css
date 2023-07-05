@@ -70,6 +70,7 @@ li.fundamentals {
 
 div.grid-item.skilltree {
 	position: relative;
+	padding-right: 5rem;
 }
 img.skilltree {
 	max-width: 100%;
@@ -100,9 +101,6 @@ li.fundamentals {
 	font-style: italic;
 	font-weight: normal;
 }
-#skilltree h3 {
-	text-align: left;
-}
 #skilltree {
 	& .li-level-1 {
 		grid-template-columns: 1fr 5fr;
@@ -118,20 +116,13 @@ li.fundamentals {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	&h4 {
-		font-weight: bold;
-		text-transform: uppercase;
-	}
-}
-#skilltree {
-	& .ul-level-2 {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+	& h3 {
+		text-align: left;
 	}
 	& h4 {
-		font-weight: bold;
+		font-weight: bolder;
+		font-size: 1em;
 		text-transform: uppercase;
 	}
 }
-
 /* the 13th floor */

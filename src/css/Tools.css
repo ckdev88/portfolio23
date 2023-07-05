@@ -49,14 +49,14 @@
 			& img {
 				margin-top: 0;
 				width: auto;
-				max-height: 4.5rem;
+				max-height: 4rem;
 				position: relative;
 				/* top: 50%;
 				-ms-transform: translateY(-50%);
 				-webkit-transform: translateY(-50%);
 				transform: translateY(-50%); */
 				/* object-fit: none; */
-				max-width: 4.5rem;
+				max-width: 4rem;
 
 				display: block;
 			}
@@ -67,4 +67,5 @@
 #tools-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	padding-top: 2rem;
 }
