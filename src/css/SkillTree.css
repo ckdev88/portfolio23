@@ -33,8 +33,6 @@ img.skilltree {
 		font-size: 1.2rem;
 		font-weight: bold;
 		padding-top: 2rem;
-		padding-bottom: 1rem;
-		/* margin-bottom: 1rem; */
 	}
 }
 #skilltree > li > ul > li {
@@ -70,8 +68,6 @@ img.skilltree {
 		font-size: 1.2rem;
 		font-weight: bold;
 		padding-top: 2rem;
-		padding-bottom: 1rem;
-		margin-bottom: 1rem;
 	}
 }
 #skilltree > li > ul > li {
@@ -88,14 +84,12 @@ li.fundamentals {
 		gap: 2rem;
 		padding-top: 1rem;
 		grid-template-columns: 1fr 5fr;
-		border-top: 1px dotted rgba(255, 255, 255, 0.2);
 		transition: background-color 0.4s linear, color 0.3s linear;
 
 		&:first-child {
 			border-top: 0;
 		}
 		&:hover {
-			background-color: #0040a6aa;
 		}
 		@media (--viewport-xl) {
 			display: grid;
@@ -109,8 +103,11 @@ li.fundamentals {
 		}
 	}
 	& .ul-level-2 {
+		box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2);
+		border-top: 1px solid black;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+		margin-right: 2rem;
 	}
 	& h3 {
 		text-align: left;
@@ -123,15 +120,14 @@ li.fundamentals {
 }
 #skilltree-wrapper {
 	& .tools {
-		background-color: #0040a6aa;
 		& #Tools {
-			& > DIV {
+			padding-left: 1rem;
+			& .tools-grid {
+				position: absolute;
 				opacity: 1;
-				transition: opacity 1.5s ease-in-out;
+				transition: opacity 0.5s ease-in-out;
 				&.hidden {
 					opacity: 0;
-					overflow: hidden;
-					height: 0;
 				}
 			}
 		}

@@ -16,10 +16,21 @@ td,
 textarea,
 pre,
 input {
-	font-family: "Outfit", sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.7em;
+}
+body,
+td,
+textarea,
+pre,
+input,
+h1,
+h2,
+h3,
+select,
+option {
+	font-family: "Outfit", sans-serif;
 }
 
 textarea,
@@ -37,8 +48,7 @@ code {
 h1,
 h2,
 h3 {
-	font-family: "Outfit"; /* Outfit-ExtraBold, bold */
-	font-weight: 800;
+	font-weight: 600;
 }
 h1 {
 	font-size: 3rem;

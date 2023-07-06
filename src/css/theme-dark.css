@@ -1,6 +1,5 @@
 html[data-theme="dark"] {
 	& #theme-backdrop {
-		background-color: #1a0d0a;
 		background-color: #190d0a;
 	}
 	& #sun-svg {
@@ -15,8 +14,9 @@ html[data-theme="dark"] {
 	textarea,
 	pre,
 	input,
+	h2,
 	h3 {
-		color: #eee;
+		color: #f9f9f9;
 	}
 
 	& h1,
@@ -24,7 +24,7 @@ html[data-theme="dark"] {
 	h3,
 	p,
 	li {
-		text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+		/* text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px; */
 	}
 
 	& #header-page {
@@ -56,14 +56,6 @@ html[data-theme="dark"] {
 			rgba(0, 16, 12, 0) 100%
 		);
 	}
-	/* & #Past {
-		background: linear-gradient(
-			180deg,
-			rgba(255, 255, 255, 0) 0%,
-			rgba(255, 255, 255, 0) 85%,
-			rgba(255, 255, 255, 0.3) 100%
-		);
-	} */
 	& #past-1 {
 		background: linear-gradient(
 			180deg,

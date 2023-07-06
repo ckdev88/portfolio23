@@ -1,7 +1,6 @@
 html[data-theme="light"] {
 	& #theme-backdrop {
 		background-color: #f2e2e6;
-		/* background-color: #fff; */
 	}
 	& #sun-svg {
 		opacity: 1;
