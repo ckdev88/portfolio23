@@ -5,9 +5,10 @@ export interface Props {
 	title: string;
 	body: string;
 	href: string;
+	lang: string;
 }
 
-import { lang, useTranslations } from '../i18n/utils.ts';
+import { lang, useTranslations } from '../i18n/utils';
 const t = useTranslations(lang);
 ---
 <li><a href={`/${lang}/#${title}`} title={`${t('lt.JumpTo')} ${title}`}>{title}</a></li>

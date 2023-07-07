@@ -1,12 +1,12 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 import SectionPastItem from './SectionPastItem.astro';
 ---
-<section id="Past"><a name={t('nav.Past')}></a>
-	<div class="intro">
+<section id="Past">
+	<div class="intro" id={t('nav.Past')}>
 		<div class="container">
 			<h2>As UI developer</h2>
 			Een kleine greep uit mijn gewerkte werk.

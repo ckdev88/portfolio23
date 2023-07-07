@@ -3,7 +3,7 @@ import SkilltreeCat from "./SkilltreeCat.astro";
 import SkilltreeItem from "./SkilltreeItem.astro";
 
 import SectionSkillsItem from "./SectionSkillsItem.astro";
-import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 import Tools from './Tools.astro';
@@ -110,36 +110,25 @@ import Tools from './Tools.astro';
 </div>
 
 <script>
-// var clickHtmlElement = getElementById('st-html').clicked;
-// function getPreferTools(){
-// 	return '#st-html';
-// }
-// document.querySelector(getPreferTools).addClass("show");
 document.querySelector("#st-css")?.addEventListener("click",()=>{
 	console.log('st-css clicked');
 	document.querySelector("#tools-css")?.classList.remove("hidden");
 	document.querySelector("#tools-html")?.classList.add("hidden");
 	document.querySelector("#tools-javascript")?.classList.add("hidden");
-	// activeTools="st-css"===themeValue?"st-css":"st-html",setPreference()
 });
 document.querySelector("#st-javascript")?.addEventListener("click",()=>{
 	console.log('st-javascript clicked');
 	document.querySelector("#tools-javascript")?.classList.remove("hidden");
 	document.querySelector("#tools-html")?.classList.add("hidden");
 	document.querySelector("#tools-css")?.classList.add("hidden");
-	// activeTools="st-css"===themeValue?"st-css":"st-html",setPreference()
 });
 document.querySelector("#st-html")?.addEventListener("click",()=>{
 	console.log('st-html clicked');
 	document.querySelector("#tools-html")?.classList.remove("hidden");
 	document.querySelector("#tools-css")?.classList.add("hidden");
 	document.querySelector("#tools-javascript")?.classList.add("hidden");
-	// activeTools="st-css"===themeValue?"st-css":"st-html",setPreference()
 });
-document.querySelector("#st-javascript")?.addEventListener("click",()=>{
-	console.log('st-javascript clicked');
-	activeTools="st-javascript"===themeValue?"st-javascript":"st-html",setPreference()
-});
+
 function setPreference(){
 	console.log('setPreference');
 }

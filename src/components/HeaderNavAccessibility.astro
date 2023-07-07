@@ -3,7 +3,7 @@ import ThemeIcon from "./ThemeIcon.astro";
 // import LanguageIcon from "./LanguageIcon.astro";
 import LanguagePicker from "./LanguagePicker.astro";
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils.ts';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
