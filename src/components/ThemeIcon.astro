@@ -18,7 +18,11 @@ const primaryColorScheme="",
 		localStorage.setItem("theme",themeValue),reflectPreference()
 	}
 	function reflectPreference(){
-		document.firstElementChild.setAttribute("data-theme",themeValue),document.querySelector("#theme-btn")?.setAttribute("aria-label",themeValue)
+		let htmlDoc = document.getElementById("html");
+		if(htmlDoc!==null){
+			htmlDoc.setAttribute("data-theme",themeValue),
+			document.querySelector("#theme-btn")?.setAttribute("aria-label",themeValue)
+		}
 	}
 	reflectPreference(),window.onload=()=>{
 		reflectPreference(),document.querySelector("#theme-btn")?.addEventListener("click",()=>{themeValue="light"===themeValue?"dark":"light",setPreference()})
