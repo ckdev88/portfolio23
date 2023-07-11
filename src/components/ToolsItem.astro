@@ -1,8 +1,8 @@
 ---
-const {name,img} = Astro.props;
+const {name,img,w,h} = Astro.props;
 ---
 <div class="tool-item-wrapper">
 	<div class="tool-item">
-		<img src={img} alt={name}/>
+		<img src={img} alt={name} width={w} height={h} />
 	</div>
 </div>
