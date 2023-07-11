@@ -126,8 +126,15 @@ li.fundamentals {
 				position: absolute;
 				opacity: 1;
 				transition: opacity 0.5s ease-in-out;
+				& .tool-item-wrapper{
+					box-shadow: 0 0 .5rem rgba(255,255,255,.8);
+					transition: box-shadow .5s ease-in-out;
+				}
 				&.hidden {
 					opacity: 0;
+					& .tool-item-wrapper{
+						box-shadow: none;
+					}
 				}
 			}
 		}
