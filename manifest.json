@@ -1,0 +1,24 @@
+{
+	"short_name": "Portfolio CK",
+	"name": "Portfolio Front-end developer CK",
+
+	"icons": [
+		{
+			"src": "img/ck-logo-13.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512"
+		},
+		{
+			"src": "img/ck-logo-13.svg",
+			"type": "image/svg+xml",
+			"sizes": "192x192"
+		}
+	],
+
+	"description": "Portfolio mini website for CK frontend developer.",
+	"start_url": "/",
+	"theme_color": "#3367D6",
+	"background_color": "#3367D6",
+	"display": "standalone",
+	"scope": "/"
+}

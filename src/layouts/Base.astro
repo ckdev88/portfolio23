@@ -6,7 +6,7 @@ export interface Props {
 }
 const { title,lang } = Astro.props;
 
-const logoSrc='/ck-logo-mask.svg';
+const logoSrc='/img/ck-logo-13.svg';
 ---
 <html id=html lang={lang}>
     <head>
@@ -17,6 +17,7 @@ const logoSrc='/ck-logo-mask.svg';
         <meta name="viewport" content="width=device-width" />
 		<meta name="description" content="Portfolio van CK Dev" />
         <title>{title}</title>
+		<link rel="manifest" href="/manifest.json" />
     </head>
     <body>
 		<div id="theme-backdrop"></div>
