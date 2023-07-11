@@ -4,21 +4,23 @@
 
 	"icons": [
 		{
-			"src": "img/ck-logo-13.svg",
-			"type": "image/svg+xml",
+			"src": "img/ckdev-logo-512.png",
+			"type": "image/png",
 			"sizes": "512x512"
 		},
 		{
-			"src": "img/ck-logo-13.svg",
-			"type": "image/svg+xml",
-			"sizes": "192x192"
+			"src": "img/ckdev-logo-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
 		}
 	],
 
 	"description": "Portfolio mini website for CK frontend developer.",
-	"start_url": "/",
 	"theme_color": "#3367D6",
 	"background_color": "#3367D6",
 	"display": "standalone",
-	"scope": "/"
+	"scope": "/",
+	"start_url": "/en/"
 }
