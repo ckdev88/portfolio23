@@ -104,12 +104,12 @@ html[data-theme="light"] {
 		);
 	}
 
-	& #Tools {
+	/* & #Tools {
 		background: linear-gradient(
 			180deg,
 			#d8dad8 0%,
 			#e9ebe9 80%,
 			#d8dad8 100%
 		);
-	}
+	} */
 }

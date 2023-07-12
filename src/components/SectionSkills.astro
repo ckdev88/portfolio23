@@ -5,8 +5,8 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
-<section id="Skills">
-	<div class="container" id={t('nav.Skills')}>
+<section id={t('nav.Skills')}>
+	<div class="container">
 		<!-- <div class="grid-item skilltree"> -->
 			<Skilltree /> 
 		<!-- </div> -->
