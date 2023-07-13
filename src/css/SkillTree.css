@@ -4,11 +4,14 @@
 	& .li-level-2 {
 		& h4 {
 			@media (--viewport-m) {
+				font-size:.8em
+			}
+			@media (--viewport-xs) {
 				/* hide, but not for screen readers */
-				position: absolute;
+				/* position: absolute;
 				overflow: hidden;
 				width: 0;
-				height: 0;
+				height: 0; */
 			}
 		}
 	}
@@ -43,9 +46,6 @@ img.skilltree {
 li.fundamentals {
 	font-style: italic;
 	font-weight: normal;
-}
-#skilltree h3 {
-	text-align: left;
 }
 
 div.grid-item.skilltree {
@@ -88,12 +88,13 @@ li.fundamentals {
 		left:calc(100% - 2.75rem);
 		opacity:0;
 		transition:opacity .5s ease-in-out;
+		@media (--viewport-m){
+			display:none;
+		}
 		& path{
 			fill:#f9f9f9;
-			/* stroke:#fff; */
-			/* box-shadow: #CCCFC9 */
 		}
-	}
+	} 
 	& .li-level-1 {
 		position:relative;
 		gap: 2rem;
@@ -102,7 +103,31 @@ li.fundamentals {
 		grid-template-columns: 1fr 5fr;
 		transition: background-color 0.5s linear, color 0.3s linear;
 		cursor:pointer;
-			
+		@media (--viewport-l){
+			display:grid;
+		}
+		@media (--viewport-m){
+			grid-template-columns: 1fr 5fr;
+			text-align:center;
+		}
+		@media (--viewport-s){
+			margin-top:0;
+			padding-top:1rem;
+			border-top:1px dotted rgba(255,255,255,.2);
+			grid-template-columns:auto auto;
+			gap:1rem;
+			& .tool-item-wrapper{
+				grid-column-start:1;
+				grid-column-end:3;
+			}
+		}
+		@media (--viewport-xs){
+			grid-template-columns: auto;
+			& .tool-item-wrapper{
+				grid-column-end:2;
+			}
+		}
+		
 		/* &:after{
 			display:block;
 			float:right;
@@ -134,9 +159,16 @@ li.fundamentals {
 		}
 		& .tool-item {
 			max-width: 10rem;
+			margin: 0 auto;
 			& img {
 				display: block;
 				max-width: 100%;
+				height:auto;
+				margin: 0 auto;
+				@media (--viewport-s){
+					height:5rem;
+					width:auto;
+				}
 			}
 		}
 	}
@@ -146,9 +178,19 @@ li.fundamentals {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin-right: 2rem;
+		@media (--viewport-s){
+			margin-right:0;
+			border-top:0;
+			box-shadow:none;
+		}
 	}
 	& h3 {
 		text-align: left;
+		@media (--viewport-s){
+			text-align:center;
+			padding-bottom:0;
+		}
+		
 	}
 	& h4 {
 		font-weight: bolder;
@@ -158,6 +200,9 @@ li.fundamentals {
 }
 #skilltree-wrapper {
 	& .tools {
+		@media (--viewport-m) {
+			display:none;
+		}
 		& #Tools {
 			padding-left: 1rem;
 			& .tools-grid {

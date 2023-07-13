@@ -1,6 +1,5 @@
 section {
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding: 1rem;
 }
 #section-skills-1 {
 }
@@ -8,13 +7,30 @@ section {
 	& .container {
 		display: grid;
 		grid-template-columns: 50% 50%;
+		height:24rem;
+		@media (--viewport-s){
+			display:block;
+			height:auto;
+		}
 	}
+	
 	& .intro {
-		padding: 3rem 0;
+		/* padding: 3rem 0; */
+		align-self:center;
+		@media (--viewport-s){
+			position:relative;
+			z-index:2;
+		}
 	}
 	& .logo {
 		align-self: center;
 		margin-left: 3rem;
+		@media (--viewport-s){
+			position:absolute;
+			opacity:0.2;
+			top:5rem;
+			z-index:1;
+		}
 		& img {
 			max-height: 370px;
 			height: 300px;
@@ -25,6 +41,7 @@ section {
 }
 
 #Past {
+	padding-bottom:0;
 	& .container {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
