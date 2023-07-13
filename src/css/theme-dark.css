@@ -102,4 +102,9 @@ html[data-theme="dark"] {
 			rgb(189, 82, 25) 100%
 		);
 	} */
+
+	& #skilltree .arrow-guide path{
+		/* fill:#f9f9f9; */
+		fill:#f9f9f9;
+	}
 }

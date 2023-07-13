@@ -112,4 +112,9 @@ html[data-theme="light"] {
 			#d8dad8 100%
 		);
 	} */
+
+	& #skilltree .arrow-guide path{
+		/* fill:#f9f9f9; */
+		fill:#333;
+	}
 }

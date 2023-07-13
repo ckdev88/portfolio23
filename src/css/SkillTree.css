@@ -107,8 +107,11 @@ li.fundamentals {
 			display:grid;
 		}
 		@media (--viewport-m){
+			border-top:1px dotted rgba(255,255,255,.2);
 			grid-template-columns: 1fr 5fr;
 			text-align:center;
+			/* background:red; */
+			display:block;
 		}
 		@media (--viewport-s){
 			margin-top:0;
@@ -165,9 +168,12 @@ li.fundamentals {
 				max-width: 100%;
 				height:auto;
 				margin: 0 auto;
+				@media (--viewport-m){
+					height:8rem;
+					width:auto;
+				}
 				@media (--viewport-s){
 					height:5rem;
-					width:auto;
 				}
 			}
 		}
@@ -178,10 +184,14 @@ li.fundamentals {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin-right: 2rem;
+		@media (--viewport-m){
+			margin-right:0;
+			box-shadow: none
+		}
 		@media (--viewport-s){
+			margin-top:1rem;
 			margin-right:0;
 			border-top:0;
-			box-shadow:none;
 		}
 	}
 	& h3 {

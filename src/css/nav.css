@@ -5,8 +5,8 @@
 	padding-top: 0;
 	padding-bottom: 0;
 	@media (--viewport-s){
-		margin-left:1rem;
-		margin-right:1rem;
+		/* margin-left:1rem;
+		margin-right:1rem; */
 	}
 }
 #nav-top {
@@ -46,6 +46,10 @@
 	width: 100%;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+	@media (--viewport-s){
+		padding-top:0;
+		padding-bottom:0;
+	}
 	opacity: 0.2;
 }
 #homelink img {
