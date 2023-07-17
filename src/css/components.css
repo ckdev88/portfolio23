@@ -242,14 +242,8 @@ section,
 	z-index: 3;
 }
 .scroll-line {
-	background: white;
-	background: linear-gradient(
-		180deg,
-		#cf5c1e 0%,
-		#d86b30 0.4rem,
-		#d15c1d 100%
-	);
-	height: 0.5rem;
+	background: #e35508;
+	height: 0.2rem;
 	margin-top: -10px;
 	width: 0;
 	z-index: 2;

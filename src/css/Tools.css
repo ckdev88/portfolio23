@@ -13,14 +13,15 @@
 	}
 	.tool-item-wrapper {
 		border-radius: 50%;
-		border: 0.25rem solid #e36521;
+		background-color: #fff;
+		padding:0.25rem;
 		object-fit: contain;
 		display: block;
 		width: auto;
-		height: 6rem;
-		line-height: 6rem;
-		width: 6rem;
-		height: 6rem;
+		height: 5rem;
+		line-height: 5rem;
+		width: 5rem;
+		height: 5rem;
 		color: white;
 		font-weight: bold;
 		text-align: center;
@@ -46,20 +47,19 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			/* padding: 0 0.5rem; */
 
 			& img {
 				margin-top: 0;
 				width: auto;
 				height: auto;
-				max-height: 4rem;
+				max-height: 3rem;
 				position: relative;
 				/* top: 50%;
 				-ms-transform: translateY(-50%);
 				-webkit-transform: translateY(-50%);
 				transform: translateY(-50%); */
 				/* object-fit: none; */
-				max-width: 4rem;
+				max-width: 3rem;
 				display: block;
 			}
 		}

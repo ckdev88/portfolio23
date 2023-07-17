@@ -1,6 +1,15 @@
+div.grid-item.skilltree {
+	position: relative;
+}
+img.skilltree {
+	max-width: 100%;
+	object-fit: contain;
+	position: relative;
+	z-index: 1;
+}
+
 #skilltree {
 	z-index: 2;
-
 	& .li-level-2 {
 		& h4 {
 			@media (--viewport-m) {
@@ -15,77 +24,25 @@
 			}
 		}
 	}
-}
-
-div.grid-item.skilltree {
-	position: relative;
-}
-img.skilltree {
-	max-width: 100%;
-	object-fit: contain;
-	position: relative;
-	z-index: 1;
-}
-#skilltree ul,
-#skilltree li {
-	margin: 0;
-}
-#skilltree {
+	& ul,li{
+		margin:0;
+	}
 	& > li {
 		text-align: left;
 		font-size: 1.2rem;
 		font-weight: bold;
-		padding-top: 2rem;
+		padding-top: 1rem;
+		& > ul > li {
+			font-size: 1rem;
+			font-weight: normal;
+		}
 	}
-}
-#skilltree > li > ul > li {
-	font-size: 1rem;
-	font-weight: normal;
-	font-style: italic;
-}
-li.fundamentals {
-	font-style: italic;
-	font-weight: normal;
-}
-
-div.grid-item.skilltree {
-	position: relative;
-	padding-right: 5rem;
-}
-img.skilltree {
-	max-width: 100%;
-	object-fit: contain;
-	position: relative;
-	z-index: 1;
-}
-#skilltree ul,
-#skilltree li {
-	margin: 0;
-}
-#skilltree {
-	& > li {
-		text-align: left;
-		font-size: 1.2rem;
-		font-weight: bold;
-		padding-top: 2rem;
-	}
-}
-#skilltree > li > ul > li {
-	font-size: 1rem;
-	font-weight: normal;
-	font-style: italic;
-}
-li.fundamentals {
-	font-style: italic;
-	font-weight: normal;
-}
-#skilltree {
 	& .arrow-guide{
 		position:absolute;
-		top:2.5rem;
-		height:1rem;
-		width:1rem;
-		left:calc(100% - 2.75rem);
+		top:1.5rem;
+		height:.75rem;
+		width:.75rem;
+		left:calc(100% - .75rem);
 		opacity:0;
 		transition:opacity .5s ease-in-out;
 		@media (--viewport-m){
@@ -97,7 +54,7 @@ li.fundamentals {
 	} 
 	& .li-level-1 {
 		position:relative;
-		gap: 2rem;
+		gap: 1rem;
 		margin-top: 1rem;
 		margin-bottom:1rem;
 		grid-template-columns: 1fr 5fr;
@@ -168,6 +125,9 @@ li.fundamentals {
 				max-width: 100%;
 				height:auto;
 				margin: 0 auto;
+				@media (--viewport-xl){
+					margin: 0;
+				}
 				@media (--viewport-m){
 					height:8rem;
 					width:auto;
@@ -183,7 +143,6 @@ li.fundamentals {
 		border-top: 1px solid black;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		margin-right: 2rem;
 		@media (--viewport-m){
 			margin-right:0;
 			box-shadow: none
@@ -208,24 +167,36 @@ li.fundamentals {
 		text-transform: uppercase;
 	}
 }
+
+div.grid-item.skilltree {
+	position: relative;
+	padding-right: 5rem;
+}
+img.skilltree {
+	max-width: 100%;
+	object-fit: contain;
+	position: relative;
+	z-index: 1;
+}
+
+li.fundamentals {
+	font-weight: normal;
+}
 #skilltree-wrapper {
 	& .tools {
 		@media (--viewport-m) {
 			display:none;
 		}
 		& #Tools {
-			padding-left: 1rem;
+			padding-left: 2rem;
 			& .tools-grid {
 				position: absolute;
 				opacity: 1;
 				transition: opacity 0.5s ease-in-out;
-				& .tool-item-wrapper{
-					box-shadow: 0 0 .5rem rgba(255,255,255,.8);
-					transition: box-shadow .5s ease-in-out;
-				}
+				
 				&.hidden {
 					opacity: 0;
-					& .tool-item-wrapper{
+					& .tool-item-wrapper{ 
 						box-shadow: none;
 					}
 				}

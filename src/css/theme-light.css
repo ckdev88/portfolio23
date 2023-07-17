@@ -1,6 +1,14 @@
+#theme-backdrop{
+	transition:opacity .5s ease-in-out, background-color .5 ease-in-out;
+}
 html[data-theme="light"] {
 	& #theme-backdrop {
-		background-color: #f2e2e6;
+		transition: background-color .5 ease-in-out;
+		background-color: #D9D2D1;
+		opacity:1;
+	}
+	& body{
+		background:white
 	}
 	& #sun-svg {
 		opacity: 1;
@@ -14,8 +22,11 @@ html[data-theme="light"] {
 	textarea,
 	pre,
 	input,
-	h3 {
-		color: #333;
+	h2,
+	h3,
+	#pages a,
+	#nav-languages {
+		color: #282828;
 	}
 
 	& h1,
@@ -26,95 +37,82 @@ html[data-theme="light"] {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
 
-	& #header-page {
+	/* #container{
 		background: linear-gradient(
 			180deg,
-			#2a2a2a 0%,
-			#2a2a2a 0.5rem,
-			#0080e6 0.5rem,
-			#0080e6 40%,
-			#2090ec 80%,
-			#0080e6 100%
+			rgba(118, 143, 126, 0.2) 0%,
+			rgba(118, 143, 126, 0.2) 80%,
+			rgba(107, 137, 116, 0.2) 100%
 		);
+	} */
+	& #header-page {
+		background: #D9D2D1;
+		border-bottom:2px dashed #282828;
 	}
+	
+	& #header-page{
+		animation-name: mymove;
+		animation-duration: 1s;
+		animation-delay: .6s;
+	}
+	@keyframes mymove {
+		0% {background-color: transparent;}
+		50% {background-color:transparent;}
+		100% {background-color: #D9D2D1;}
+	}
+
 	& #Hi {
 		background: linear-gradient(
 			180deg,
-			rgba(202, 220, 250, 0.3) 0%,
-			rgba(202, 220, 250, 0.3) 40%,
-			rgba(213, 231, 250, 0.45) 80%,
-			rgba(200, 218, 248, 0.5) 100%
+			transparent 0%,
+			transparent 80%,
+			rgba(0, 0, 0, 0.05) 100%
 		);
 	}
-	& #Future {
-		background: linear-gradient(
-			180deg,
-			rgba(202, 220, 250, 0.5) 0%,
-			rgba(202, 220, 250, 0.5) 40%,
-			rgba(213, 231, 250, 0.55) 80%,
-			rgba(200, 218, 248, 0.5) 100%
-		);
-	}
+	
 	& #Past {
 		background: linear-gradient(
 			180deg,
-			#faeaee 0%,
-			#faeaee 85%,
-			#eadade 100%
-		);
-		background: linear-gradient(
-			180deg,
-			rgba(118, 143, 126, 0.2) 0%,
-			rgba(118, 143, 126, 0.2) 80%,
-			rgba(107, 137, 116, 0.2) 100%
+			rgba(0, 0, 0, 0.05) 0%,
+			transparent 80%,
+			transparent 100%
 		);
 	}
-	& #past-1 {
-		background: linear-gradient(
-			180deg,
-			rgba(118, 143, 126, 0.2) 0%,
-			rgba(118, 143, 126, 0.2) 80%,
-			rgba(107, 137, 116, 0.2) 100%
-		);
-	}
-	& #past-2 {
-		background: linear-gradient(
-			180deg,
-			rgba(191, 199, 214, 0.5) 0%,
-			rgba(191, 199, 214, 0.5) 80%,
-			rgba(179, 186, 201, 0.5) 100%
-		);
-	}
-	& #past-3 {
-		background: linear-gradient(
-			180deg,
-			rgba(212, 194, 194, 0.4) 0%,
-			rgba(212, 194, 194, 0.4) 80%,
-			rgba(205, 187, 187, 0.4) 100%
-		);
-	}
-
+	
 	& #Skills {
 		background: linear-gradient(
 			180deg,
-			rgba(56, 128, 87, 0.2) 0%,
-			rgba(56, 128, 87, 0.2) 40%,
-			rgba(57, 128, 96, 0.2) 80%,
-			rgba(51, 123, 82, 0.2) 100%
+			transparent 0%,
+			transparent 80%,
+			rgba(0, 0, 0, 0.05) 100%
 		);
 	}
 
-	/* & #Tools {
-		background: linear-gradient(
-			180deg,
-			#d8dad8 0%,
-			#e9ebe9 80%,
-			#d8dad8 100%
-		);
-	} */
-
 	& #skilltree .arrow-guide path{
-		/* fill:#f9f9f9; */
-		fill:#333;
+		fill:#e35508;
+	}
+
+	#nav-top a {
+		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
+	}
+	
+	#nav-accessibility-language svg path,
+	#sun-svg path,
+	#moon-svg path {
+		fill: #282828
+	}
+	#pages a:hover,
+	#pages a:focus,
+	#page a:active,
+	#page .active {
+		border-color: #282828;
+	}
+	#homelink img.dark{
+		display:block;
+		opacity:1;
+	}
+	#homelink img.light{
+		display:none;
+		opacity:0
 	}
 }

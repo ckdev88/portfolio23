@@ -4,7 +4,10 @@ body {
 	margin: 0;
 	padding: 0;
 	cursor: default;
-	font-size: 16px;
+	font-size: 18px;
+	@media (--viewport-l){
+		font-size:16px;
+	}
 }
 html {
 	height: 100%;
@@ -55,6 +58,11 @@ h1 {
 	line-height: 1.1em;
 	margin-bottom: 0.4em;
 	width: 100%;
+	& sub{
+		display:block;
+		font-size: .7em;
+		opacity:.4
+	}
 }
 h2 {
 	font-size: 2.4rem;
@@ -127,9 +135,6 @@ section {
 	padding: 1rem 0;
 } */
 
-#nav-top a {
-	text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
-}
 main {
 	max-width: 100%;
 	overflow-x: hidden;
