@@ -58,6 +58,18 @@
 			padding-right: 1rem;
 		}
 	}
+	h3{
+		/* display:flex; */
+		justify-content:space-between;
+		& sub{
+			opacity:.3;
+			vertical-align:baseline;
+			font-size:1rem;
+			/* font-size:.6em; */
+			display:flex;
+			align-self:right
+		}
+	}
 }
 #Skills .intro{
 	margin-left:-.5rem;

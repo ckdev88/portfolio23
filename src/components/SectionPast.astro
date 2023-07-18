@@ -4,6 +4,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 import SectionPastItem from "./SectionPastItem.astro";
+import BadgeItem from "./BadgeItem.astro";
 ---
 
 <section id={t("nav.Past")}>
@@ -20,7 +21,7 @@ import SectionPastItem from "./SectionPastItem.astro";
 		<div class="container">
 			<article aria-labelledby="past-header" class="grid-container">
 				<div class="past-article-intro">
-					<h3>Visma PlusPort</h3>
+					<h3>Visma PlusPort<sub>2017 - 2021</sub></h3>
 					<p>
 						As part of a small team I was responsible for the
 						front-end and accessibility (WCAG 2.1) of our own
@@ -28,7 +29,15 @@ import SectionPastItem from "./SectionPastItem.astro";
 						charge of the front-end and achieving WCAG2.1
 						certification for our main product: the LMS (learning
 						management system).
-					</p>
+					</p><br />
+					<BadgeItem title="EcmaScript6" />
+					<BadgeItem title="React" />
+					<BadgeItem title="SASS" />
+					<BadgeItem title="Bootstrap" />
+					<BadgeItem title="Adobe XD" />
+					<BadgeItem title="WordPress" />
+					<BadgeItem title="ActiveCampaign" />
+					<BadgeItem title="WCAG" />
 				</div>
 				<aside class="thumbs" aria-hidden="true">
 					<div class="grid-container">
@@ -63,7 +72,7 @@ import SectionPastItem from "./SectionPastItem.astro";
 				class="grid-container reverse"
 			>
 				<div class="past-article-intro">
-					<h3>Clever Strategy</h3>
+					<h3>Clever Strategy<sub>2011 - 2017</sub></h3>
 					<p>
 						Werkzaam als Service manager/ Front-end developer,
 						gespecialiseerd in rendementsmarketing. Hierbij is het
@@ -121,9 +130,47 @@ import SectionPastItem from "./SectionPastItem.astro";
 
 	<div id="past-3">
 		<div class="container">
-			<article aria-labelledby="past-header3" class="grid-container">
+			<article aria-labelledby="past-header4" class="grid-container">
 				<div class="past-article-intro">
-					<h3>Lined</h3>
+					<h3>Fair Products Plaza <sub>2011 - 2016</sub></h3>
+					<p>
+						Samen met mijn zus een webshop opgezet en gerund voor
+						eerlijke producten. Dit hield in dat alle producten een
+						oorsprong hadden van Fair trade, biologisch, organisch,
+						dierproefvrij en milieuvriendelijk. De webshop was
+						gebouwd in Magento (PHP), de mailcampagnes werden gedaan
+						via MailChimp. Helaas hebben we eind 2016 de stekker uit
+						het project moeten trekken.
+					</p>
+				</div>
+				<aside class="thumbs" aria-hidden="true">
+					<div class="grid-container">
+						<SectionPastItem
+							img="../img/lined-logo.svg"
+							name="Lined"
+							w="144"
+							h="144"
+						/>
+						<SectionPastItem
+							img="../img/troublefree-logo.svg"
+							name="Total"
+							w="144"
+							h="144"
+						/>
+					</div>
+				</aside>
+			</article>
+		</div>
+	</div>
+
+	<div id="past-4">
+		<div class="container">
+			<article
+				aria-labelledby="past-header3"
+				class="grid-container reverse"
+			>
+				<div class="past-article-intro">
+					<h3>Lined <sub>2006 - 2011</sub></h3>
 					<p>
 						As part of a small team I was responsible for the
 						front-end and accessibility (WCAG 2.1) of our own
@@ -135,12 +182,18 @@ import SectionPastItem from "./SectionPastItem.astro";
 				</div>
 				<aside class="thumbs" aria-hidden="true">
 					<div class="grid-container">
-						<!-- <a class="grid-item" href="#" class="thumbA"><img src="<?=$basispad?>" alt="" class="thumbIMG"/></a>
-						<a class="grid-item" href="#" class="thumbA"><img src="<?=$basispad?>" alt="" class="thumbIMG"/></a>
-						<a class="grid-item" href="#" class="thumbA"><img src="<?=$basispad?>" alt="" class="thumbIMG"/></a>
-						<a class="grid-item" href="#" class="thumbA"><img src="<?=$basispad?>" alt="" class="thumbIMG"/></a>
-						<a class="grid-item" href="#" class="thumbA"><img src="<?=$basispad?>" alt="" class="thumbIMG"/></a>
-						<a class="grid-item" href="#" class="thumbA"><img src="<?=$basispad?>" alt="" class="thumbIMG"/></a> -->
+						<SectionPastItem
+							img="../img/lined-logo.svg"
+							name="Lined"
+							w="144"
+							h="144"
+						/>
+						<SectionPastItem
+							img="../img/troublefree-logo.svg"
+							name="Total"
+							w="144"
+							h="144"
+						/>
 					</div>
 				</aside>
 			</article>
