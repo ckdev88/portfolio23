@@ -111,7 +111,8 @@ input[type="checkbox"] {
 a {
 	text-decoration: none;
 }
-footer a {
+footer a,
+#Contact a {
 	text-decoration: underline;
 	color: #b22406;
 }
@@ -134,12 +135,10 @@ article,
 article > div {
 	vertical-align: middle;
 }
-/* 
-section {
-	padding: 1rem 0;
-} */
-
 main {
 	max-width: 100%;
 	overflow-x: hidden;
+}
+footer {
+	margin-top: 4rem;
 }

@@ -1,14 +1,14 @@
-#theme-backdrop{
-	transition:opacity .5s ease-in-out, background-color .5 ease-in-out;
+#theme-backdrop {
+	transition: opacity 0.5s ease-in-out, background-color 0.5 ease-in-out;
 }
 html[data-theme="dark"] {
 	& #theme-backdrop {
-		transition: background-color .5 ease-in-out;
+		transition: background-color 0.5 ease-in-out;
 		background-color: #190d0a;
-		opacity:1;
+		opacity: 1;
 	}
-	& body{
-		background:black
+	& body {
+		background: black;
 	}
 	& #sun-svg {
 		opacity: 0;
@@ -36,7 +36,7 @@ html[data-theme="dark"] {
 	li {
 		text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
 	}
-	
+
 	/* #container{
 		background: linear-gradient(
 			180deg,
@@ -45,21 +45,30 @@ html[data-theme="dark"] {
 			rgba(7, 37, 16, 0.2) 100%
 		);
 	} */
-	
+
 	& #header-page {
-		background: #190D0A; 
-		border-bottom:2px dashed #f2e2e6;
+		background: #190d0a;
+		border-bottom: 2px dashed #f2e2e6;
+	}
+	footer {
+		border-top: 2px dashed #f2e2e6;
 	}
 
 	& #header-page {
 		animation-name: mymove;
 		animation-duration: 1s;
-		animation-delay: .6s;
+		animation-delay: 0.6s;
 	}
 	@keyframes mymove {
-		0% {background-color: transparent;}
-		50% {background-color:transparent;}
-		100% {background-color: #190D0A;}
+		0% {
+			background-color: transparent;
+		}
+		50% {
+			background-color: transparent;
+		}
+		100% {
+			background-color: #190d0a;
+		}
 	}
 
 	& #Hi {
@@ -69,8 +78,8 @@ html[data-theme="dark"] {
 			transparent 80%,
 			rgba(0, 0, 0, 0.4) 100%
 		);
-		& .logo{
-			opacity:0.05
+		& .logo {
+			opacity: 0.05;
 		}
 	}
 
@@ -87,19 +96,18 @@ html[data-theme="dark"] {
 		background: linear-gradient(
 			180deg,
 			transparent 0%,
-			transparent 80%
-			rgba(0, 0, 0, 0.4) 100%,
+			transparent 80% rgba(0, 0, 0, 0.4) 100%
 		);
 	}
 
-	& #skilltree .arrow-guide path{
-		fill:#e35508;
+	& #skilltree .arrow-guide path {
+		fill: #e35508;
 	}
-		
+
 	#nav-top a {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
-	
+
 	#nav-accessibility-language svg path,
 	#sun-svg path,
 	#moon-svg path {
@@ -111,22 +119,23 @@ html[data-theme="dark"] {
 	#page .active {
 		border-color: #fafafa;
 	}
-	#homelink img.dark{
-		display:none;
-		opacity:0;
+	#homelink img.dark {
+		display: none;
+		opacity: 0;
 	}
-	#homelink img.light{
-		display:block;
-		opacity:1
+	#homelink img.light {
+		display: block;
+		opacity: 1;
 	}
-	footer a {
-		color:#f36547;
+	footer a,
+	#Contact a {
+		color: #f36547;
 		text-shadow: 0 0 1px black;
 	}
 	#skilltree {
 		& .li-level-2 {
 			& h4 {
-				color:#817875
+				color: #817875;
 			}
 		}
 	}

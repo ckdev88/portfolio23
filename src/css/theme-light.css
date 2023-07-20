@@ -37,17 +37,12 @@ html[data-theme="light"] {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
 
-	/* #container{
-		background: linear-gradient(
-			180deg,
-			rgba(118, 143, 126, 0.2) 0%,
-			rgba(118, 143, 126, 0.2) 80%,
-			rgba(107, 137, 116, 0.2) 100%
-		);
-	} */
 	& #header-page {
 		background: #d9d2d1;
 		border-bottom: 2px dashed #252525;
+	}
+	footer {
+		border-top: 2px dashed #252525;
 	}
 
 	& #header-page {
@@ -78,7 +73,7 @@ html[data-theme="light"] {
 	}
 
 	& #Past,
-	footer {
+	#Contact {
 		background: linear-gradient(
 			180deg,
 			rgba(0, 0, 0, 0.05) 0%,
@@ -114,7 +109,8 @@ html[data-theme="light"] {
 		display: none;
 		opacity: 0;
 	}
-	footer a {
+	footer a,
+	#Contact a {
 		text-shadow: 0 0 1px white;
 	}
 	#skilltree {
