@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+
+const t = useTranslations(lang);
+
+import NavItem from "./NavItem.astro";
+
+// const logoSrc='../img/ck-logo-1.svg';
+const logoSrc = "../img/ckdev-logo.svg";
+const logoSrcLight = "../img/ckdev-logo-light.svg";
+---
+
+<nav id="nav-top" role="navigation" aria-label="Hoofdmenu">
+	<a href="./" title="Terug naar de homepage" id="homelink">
+		<img
+			src={logoSrc}
+			alt="CK, Front-end developer"
+			height="32"
+			class="dark"
+		/>
+		<img
+			src={logoSrcLight}
+			alt="CK, Front-end developer"
+			height="32"
+			class="light"
+		/>
+	</a>
+	<ul id="pages">
+		<NavItem title={t("nav.Hi")} lang={lang} />
+		<NavItem title={t("nav.Future")} lang={lang} />
+		<NavItem title={t("nav.Past")} lang={lang} />
+		<NavItem title={t("nav.Skills")} lang={lang} />
+		<NavItem title={t("nav.Tools")} lang={lang} />
+		<NavItem title={t("nav.Contact")} lang={lang} />
+	</ul>
+</nav>

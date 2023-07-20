@@ -4,26 +4,36 @@ body {
 	margin: 0;
 	padding: 0;
 	cursor: default;
-	font-size: 16px;
+	font-size: 18px;
+	@media (--viewport-l){
+		font-size:16px;
+	}
 }
 html {
-	/* background: #ece6f0 url(img/bgPattern.jpg) 0 0; */
-	background: rgba(118, 190, 255, 0.29);
 	height: 100%;
 	scroll-behavior: smooth;
-}
-body {
-	height: 99%;
+	scroll-padding-top: 66px;
 }
 body,
 td,
 textarea,
 pre,
 input {
-	font-family: "Outfit-Regular", sans-serif;
+	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.7em;
-	color: #333;
+}
+body,
+td,
+textarea,
+pre,
+input,
+h1,
+h2,
+h3,
+select,
+option {
+	font-family: "Outfit", sans-serif;
 }
 
 textarea,
@@ -34,36 +44,35 @@ input[type="text"] {
 	width: auto;
 	line-height: 1em;
 }
-input[type="submit"],
-input.form_submit {
-}
 code {
 	font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
 		DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
+h1,
+h2,
+h3 {
+	font-weight: 600;
+}
 h1 {
 	font-size: 3rem;
 	line-height: 1.1em;
-	font-weight: bold;
 	margin-bottom: 0.4em;
-	font-family: "Outfit-ExtraBold";
 	width: 100%;
+	& sub{
+		display:block;
+		font-size: .7em;
+		opacity:.4
+	}
 }
 h2 {
 	font-size: 2.4rem;
 	line-height: 1.1em;
-	font-weight: bold;
 	margin-bottom: 0.4em;
-	font-family: "Outfit-ExtraBold";
 }
 h3 {
-	color: #333;
-	color: #514f4b;
 	font-size: 1.6rem;
-	font-weight: bold;
 	margin-top: 0;
 	padding-bottom: 1em;
-	font-family: "Outfit-ExtraBold";
 }
 h3[onclick]:hover {
 	cursor: pointer;
@@ -121,18 +130,12 @@ article,
 article > div {
 	vertical-align: middle;
 }
-
+/* 
 section {
 	padding: 1rem 0;
-}
+} */
 
-h1,
-h2,
-h3,
-p,
-li {
-	text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
-}
-#nav-top a {
-	text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+main {
+	max-width: 100%;
+	overflow-x: hidden;
 }

@@ -1,4 +1,3 @@
-/*---algemeen*/
 .clr:after,
 .portfolio:after,
 .portfolio-item:after {
@@ -22,31 +21,41 @@
 .grid-container {
 	display: grid;
 	max-width: 100%;
-	/* grid-auto-flow: column; */
-	/* grid-auto-columns: 100px; */
 }
 
 .flex-container {
-	/* We first create a flex layout context */
 	display: flex;
-
-	/* Then we define the flow direction 
-	   and if we allow the items to wrap 
-	 * Remember this is the same as:
-	 * flex-direction: row;
-	 * flex-wrap: wrap;
-	 */
 	flex-flow: row wrap;
-
-	/* Then we define how is distributed the remaining space */
 	justify-content: space-around;
-
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 
-/*---MINICLASSES*/
 .clear {
 	clear: both;
+}
+.dnone {
+	display: none;
+}
+.dblock {
+	display: block;
+}
+/* .hidden {
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+} */
+
+.badge {
+	font-size: 0.9em;
+	display: inline-block;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+	padding: 0.15rem 0.3rem;
+	border-radius: 0.3rem;
+	background: #123456;
+	color: white;
+	line-height: 1.3em;
 }
