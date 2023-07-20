@@ -5,8 +5,8 @@ body {
 	padding: 0;
 	cursor: default;
 	font-size: 18px;
-	@media (--viewport-l){
-		font-size:16px;
+	@media (--viewport-l) {
+		font-size: 16px;
 	}
 }
 html {
@@ -58,10 +58,10 @@ h1 {
 	line-height: 1.1em;
 	margin-bottom: 0.4em;
 	width: 100%;
-	& sub{
-		display:block;
-		font-size: .7em;
-		opacity:.4
+	& sub {
+		display: block;
+		font-size: 0.7em;
+		opacity: 0.4;
 	}
 }
 h2 {
@@ -110,6 +110,10 @@ input[type="checkbox"] {
 }
 a {
 	text-decoration: none;
+}
+footer a {
+	text-decoration: underline;
+	color: #b22406;
 }
 a:hover {
 	text-decoration: underline;

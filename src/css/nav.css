@@ -3,8 +3,8 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 0;
-	padding-bottom: 0;	
-	@media (--viewport-s){
+	padding-bottom: 0;
+	@media (--viewport-s) {
 		/* margin-left:1rem;
 		margin-right:1rem; */
 	}
@@ -13,9 +13,9 @@
 	display: flex;
 	font-weight: 500;
 	align-items: center;
-	& #pages{
-		@media (--viewport-s){
-			display:none;
+	& #pages {
+		@media (--viewport-s) {
+			display: none;
 		}
 	}
 }
@@ -31,7 +31,8 @@
 	& > img {
 		display: block;
 		max-width: 100%;
-		height: auto;
+		height: 32px;
+		width: 25px;
 		fill: white;
 	}
 	@media (--viewport-s) {
@@ -46,16 +47,9 @@
 	width: 100%;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	@media (--viewport-s){
-		padding-top:0;
-		padding-bottom:0;
-	}
-	/* opacity: 0.2; */
-	& img {
-		max-width: 100%;
-		width: auto;
-		height: 32px;
-		display: block;
+	@media (--viewport-s) {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -91,16 +85,15 @@
 	margin: 0;
 }
 #pages {
-	font-size:.8rem;
+	font-size: 0.8rem;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-left: 1rem;
-	@media (--viewport-xl),
-	 (--viewport-l){
-		width:650px;
+	@media (--viewport-xl), (--viewport-l) {
+		width: 650px;
 	}
-	@media (--viewport-m){
-		width:auto;
+	@media (--viewport-m) {
+		width: auto;
 	}
 	@media (--viewport-s) {
 		padding-left: 0;
@@ -164,7 +157,7 @@
 }
 
 #theme-btn {
-	/* margin: 2px 0.5rem;  -- tijdelijk weg, omdat LanguagePicker uit staat*/ 
+	/* margin: 2px 0.5rem;  -- tijdelijk weg, omdat LanguagePicker uit staat*/
 	margin: 2px 0;
 }
 #nav-accessibility-language svg {

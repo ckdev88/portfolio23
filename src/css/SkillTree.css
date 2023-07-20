@@ -12,7 +12,6 @@ img.skilltree {
 	z-index: 2;
 	& .li-level-2 {
 		& h4 {
-			opacity: 0.3;
 			@media (--viewport-m) {
 				font-size: 0.8em;
 			}

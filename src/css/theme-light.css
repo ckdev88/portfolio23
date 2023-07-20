@@ -1,14 +1,14 @@
-#theme-backdrop{
-	transition:opacity .5s ease-in-out, background-color .5 ease-in-out;
+#theme-backdrop {
+	transition: opacity 0.5s ease-in-out, background-color 0.5 ease-in-out;
 }
 html[data-theme="light"] {
 	& #theme-backdrop {
-		transition: background-color .5 ease-in-out;
-		background-color: #D9D2D1;
-		opacity:1;
+		transition: background-color 0.5 ease-in-out;
+		background-color: #d9d2d1;
+		opacity: 1;
 	}
-	& body{
-		background:white
+	& body {
+		background: white;
 	}
 	& #sun-svg {
 		opacity: 1;
@@ -46,22 +46,29 @@ html[data-theme="light"] {
 		);
 	} */
 	& #header-page {
-		background: #D9D2D1;
-		border-bottom:2px dashed #252525;
-	}
-	
-	& #header-page{
-		animation-name: mymove;
-		animation-duration: 1s;
-		animation-delay: .6s;
-	}
-	@keyframes mymove {
-		0% {background-color: transparent;}
-		50% {background-color:transparent;}
-		100% {background-color: #D9D2D1;}
+		background: #d9d2d1;
+		border-bottom: 2px dashed #252525;
 	}
 
-	& #Hi {
+	& #header-page {
+		animation-name: mymove;
+		animation-duration: 1s;
+		animation-delay: 0.6s;
+	}
+	@keyframes mymove {
+		0% {
+			background-color: transparent;
+		}
+		50% {
+			background-color: transparent;
+		}
+		100% {
+			background-color: #d9d2d1;
+		}
+	}
+
+	& #Hi,
+	#Skills {
 		background: linear-gradient(
 			180deg,
 			transparent 0%,
@@ -69,8 +76,9 @@ html[data-theme="light"] {
 			rgba(0, 0, 0, 0.05) 100%
 		);
 	}
-	
-	& #Past {
+
+	& #Past,
+	footer {
 		background: linear-gradient(
 			180deg,
 			rgba(0, 0, 0, 0.05) 0%,
@@ -78,28 +86,19 @@ html[data-theme="light"] {
 			transparent 100%
 		);
 	}
-	
-	& #Skills {
-		background: linear-gradient(
-			180deg,
-			transparent 0%,
-			transparent 80%,
-			rgba(0, 0, 0, 0.05) 100%
-		);
-	}
 
-	& #skilltree .arrow-guide path{
-		fill:#e35508;
+	& #skilltree .arrow-guide path {
+		fill: #e35508;
 	}
 
 	#nav-top a {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
-	
+
 	#nav-accessibility-language svg path,
 	#sun-svg path,
 	#moon-svg path {
-		fill: #252525
+		fill: #252525;
 	}
 	#pages a:hover,
 	#pages a:focus,
@@ -107,12 +106,22 @@ html[data-theme="light"] {
 	#page .active {
 		border-color: #252525;
 	}
-	#homelink img.dark{
-		display:block;
-		opacity:1;
+	#homelink img.dark {
+		display: block;
+		opacity: 1;
 	}
-	#homelink img.light{
-		display:none;
-		opacity:0
+	#homelink img.light {
+		display: none;
+		opacity: 0;
+	}
+	footer a {
+		text-shadow: 0 0 1px white;
+	}
+	#skilltree {
+		& .li-level-2 {
+			& h4 {
+				color: #7b6f6f;
+			}
+		}
 	}
 }

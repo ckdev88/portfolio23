@@ -119,4 +119,15 @@ html[data-theme="dark"] {
 		display:block;
 		opacity:1
 	}
+	footer a {
+		color:#f36547;
+		text-shadow: 0 0 1px black;
+	}
+	#skilltree {
+		& .li-level-2 {
+			& h4 {
+				color:#817875
+			}
+		}
+	}
 }
