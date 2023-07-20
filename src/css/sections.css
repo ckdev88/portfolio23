@@ -21,9 +21,13 @@ footer,
 #Hi {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	@media (--viewport-xs){
-		padding-top:3rem;
-		padding-bottom:3rem;
+	@media (--viewport-m) {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+	@media (--viewport-xs) {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
 	}
 	& .container {
 		display: grid;
@@ -49,7 +53,7 @@ footer,
 		align-self: center;
 		text-align: center;
 		opacity: 0.1;
-		margin-left: 3rem;
+		margin-left: 2rem;
 		@media (--viewport-s) {
 			position: absolute;
 			opacity: 0.2;
@@ -62,22 +66,22 @@ footer,
 		& #logo-ck-big {
 			max-width: 100%;
 			@media (--viewport-xl) {
-				width:244px;
-				height:313px;
+				width: 244px;
+				height: 313px;
 			}
 			@media (--viewport-l) {
 			}
 			@media (--viewport-m) {
-				width:263px;
+				width: 263px;
 			}
 			@media (--viewport-s) {
-				width:256px;
-				height:328px;
-				opacity:.7;				
+				width: 236px;
+				height: 303px;
+				opacity: 0.7;
 			}
-			@media (--viewport-xs){
-				min-width:auto;
-				max-width:unset;
+			@media (--viewport-xs) {
+				min-width: auto;
+				max-width: unset;
 			}
 		}
 	}
@@ -98,13 +102,11 @@ footer,
 		}
 	}
 	h3 {
-		/* display:flex; */
 		justify-content: space-between;
 		& sub {
 			opacity: 0.3;
 			vertical-align: baseline;
 			font-size: 1rem;
-			/* font-size:.6em; */
 			display: flex;
 			align-self: right;
 		}

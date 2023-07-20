@@ -19,8 +19,9 @@
 
 	"description": "Portfolio mini website for CK frontend developer.",
 	"theme_color": "#3367D6",
+	"lang": "en-US",
 	"background_color": "#3367D6",
 	"display": "standalone",
 	"scope": "/",
-	"start_url": "/en/"
+	"start_url": "https://ckdev88.github.io/"
 }
