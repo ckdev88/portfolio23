@@ -64,6 +64,9 @@ html[data-theme="light"] {
 			filter: invert(0.5) saturate(1);
 		}
 	}
+	#homelink{
+		filter: invert(1);
+	}
 
 	& #Hi,
 	#Skills {
@@ -103,14 +106,6 @@ html[data-theme="light"] {
 	#page a:active,
 	#page .active {
 		border-color: #252525;
-	}
-	#homelink img.dark {
-		display: block;
-		opacity: 1;
-	}
-	#homelink img.light {
-		display: none;
-		opacity: 0;
 	}
 	footer a,
 	#Contact a {
