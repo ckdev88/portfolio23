@@ -12,8 +12,9 @@ img.skilltree {
 	z-index: 2;
 	& .li-level-2 {
 		& h4 {
+			opacity: 0.3;
 			@media (--viewport-m) {
-				font-size:.8em
+				font-size: 0.8em;
 			}
 			@media (--viewport-xs) {
 				/* hide, but not for screen readers */
@@ -24,8 +25,9 @@ img.skilltree {
 			}
 		}
 	}
-	& ul,li{
-		margin:0;
+	& ul,
+	li {
+		margin: 0;
 	}
 	& > li {
 		text-align: left;
@@ -37,77 +39,76 @@ img.skilltree {
 			font-weight: normal;
 		}
 	}
-	& .arrow-guide{
-		position:absolute;
-		top:1.5rem;
-		height:.75rem;
-		width:.75rem;
-		left:calc(100% - .75rem);
-		opacity:0;
-		transition:opacity .5s ease-in-out;
-		@media (--viewport-m){
-			display:none;
+	& .arrow-guide {
+		position: absolute;
+		top: 1.5rem;
+		height: 0.75rem;
+		width: 0.75rem;
+		left: calc(100% - 0.75rem);
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+		@media (--viewport-m) {
+			display: none;
 		}
-		& path{
-			fill:#f9f9f9;
+		& path {
+			fill: #f9f9f9;
 		}
-	} 
+	}
 	& .li-level-1 {
-		position:relative;
+		position: relative;
 		gap: 1rem;
 		margin-top: 1rem;
-		margin-bottom:1rem;
+		margin-bottom: 1rem;
 		grid-template-columns: 1fr 5fr;
 		transition: background-color 0.5s linear, color 0.3s linear;
-		cursor:pointer;
-		@media (--viewport-l){
-			display:grid;
+		cursor: pointer;
+		@media (--viewport-l) {
+			display: grid;
 		}
-		@media (--viewport-m){
-			border-top:1px dotted rgba(255,255,255,.2);
+		@media (--viewport-m) {
+			border-top: 1px dotted rgba(255, 255, 255, 0.2);
 			grid-template-columns: 1fr 5fr;
-			text-align:center;
+			text-align: center;
 			/* background:red; */
-			display:block;
+			display: block;
 		}
-		@media (--viewport-s){
-			margin-top:0;
-			padding-top:1rem;
-			border-top:1px dotted rgba(255,255,255,.2);
-			grid-template-columns:auto auto;
-			gap:1rem;
-			& .tool-item-wrapper{
-				grid-column-start:1;
-				grid-column-end:3;
+		@media (--viewport-s) {
+			margin-top: 0;
+			padding-top: 1rem;
+			border-top: 1px dotted rgba(255, 255, 255, 0.2);
+			grid-template-columns: auto auto;
+			gap: 1rem;
+			& .tool-item-wrapper {
+				grid-column-start: 1;
+				grid-column-end: 3;
 			}
 		}
-		@media (--viewport-xs){
+		@media (--viewport-xs) {
 			grid-template-columns: auto;
-			& .tool-item-wrapper{
-				grid-column-end:2;
+			& .tool-item-wrapper {
+				grid-column-end: 2;
 			}
 		}
-		
+
 		/* &:after{
 			display:block;
 			float:right;
 			content:"&rarr;";
 			width:3rem;
 		} */
-		&.active{
-			cursor: auto; 
+		&.active {
+			cursor: auto;
 
-			& .arrow-guide{
-				opacity:.8;
+			& .arrow-guide {
+				opacity: 0.8;
 			}
-/* 			
+			/* 			
 			background: 
 				linear-gradient(45deg, transparent 50%, #fff 50%),
             	linear-gradient(-45deg, transparent 50%, #f00 50%); 
 			background-position: 100% 50%;
 			background-size: 6rem 6rem;
 			background-repeat: no-repeat; */
-
 		}
 		&:first-child {
 			border-top: 0;
@@ -123,17 +124,17 @@ img.skilltree {
 			& img {
 				display: block;
 				max-width: 100%;
-				height:auto;
+				height: auto;
 				margin: 0 auto;
-				@media (--viewport-xl){
+				@media (--viewport-xl) {
 					margin: 0;
 				}
-				@media (--viewport-m){
-					height:8rem;
-					width:auto;
+				@media (--viewport-m) {
+					height: 8rem;
+					width: auto;
 				}
-				@media (--viewport-s){
-					height:5rem;
+				@media (--viewport-s) {
+					height: 5rem;
 				}
 			}
 		}
@@ -143,23 +144,22 @@ img.skilltree {
 		border-top: 1px solid black;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		@media (--viewport-m){
-			margin-right:0;
-			box-shadow: none
+		@media (--viewport-m) {
+			margin-right: 0;
+			box-shadow: none;
 		}
-		@media (--viewport-s){
-			margin-top:1rem;
-			margin-right:0;
-			border-top:0;
+		@media (--viewport-s) {
+			margin-top: 1rem;
+			margin-right: 0;
+			border-top: 0;
 		}
 	}
 	& h3 {
 		text-align: left;
-		@media (--viewport-s){
-			text-align:center;
-			padding-bottom:0;
+		@media (--viewport-s) {
+			text-align: center;
+			padding-bottom: 0;
 		}
-		
 	}
 	& h4 {
 		font-weight: bolder;
@@ -185,7 +185,7 @@ li.fundamentals {
 #skilltree-wrapper {
 	& .tools {
 		@media (--viewport-m) {
-			display:none;
+			display: none;
 		}
 		& #Tools {
 			padding-left: 2rem;
@@ -193,10 +193,10 @@ li.fundamentals {
 				position: absolute;
 				opacity: 1;
 				transition: opacity 0.5s ease-in-out;
-				
+
 				&.hidden {
 					opacity: 0;
-					& .tool-item-wrapper{ 
+					& .tool-item-wrapper {
 						box-shadow: none;
 					}
 				}

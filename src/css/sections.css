@@ -1,41 +1,45 @@
-
-#section-skills-1 {
+section {
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
+
 #Hi {
 	& .container {
 		display: grid;
 		grid-template-columns: 50% 50%;
-		height:24rem;
-		@media (--viewport-m){
+		height: 24rem;
+		@media (--viewport-m) {
 			grid-template-columns: 2fr 1fr;
 		}
-		@media (--viewport-s){
-			display:block;
-			height:auto;
+		@media (--viewport-s) {
+			display: block;
+			height: auto;
 		}
 	}
-	
+
 	& .intro {
 		/* padding: 3rem 0; */
-		align-self:center;
-		@media (--viewport-s){
-			position:relative;
-			z-index:2;
+		align-self: center;
+		@media (--viewport-s) {
+			position: relative;
+			z-index: 2;
 		}
 	}
 	& .logo {
 		align-self: center;
+		text-align: center;
+		opacity: 0.1;
 		margin-left: 3rem;
-		@media (--viewport-m){
-			margin-right:-2rem;
+		@media (--viewport-m) {
+			margin-right: -2rem;
 		}
-		@media (--viewport-s){
-			position:absolute;
-			opacity:0.2;
-			top:5rem;
-			z-index:1;
+		@media (--viewport-s) {
+			position: absolute;
+			opacity: 0.2;
+			top: 5rem;
+			z-index: 1;
 		}
-		& svg{
+		& svg {
 			max-height: 370px;
 			height: 300px;
 			width: auto;
@@ -45,7 +49,7 @@
 }
 
 #Past {
-	padding-bottom:0;
+	padding-bottom: 0;
 	& .container {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
@@ -58,26 +62,32 @@
 			padding-right: 1rem;
 		}
 	}
-	h3{
+	h3 {
 		/* display:flex; */
-		justify-content:space-between;
-		& sub{
-			opacity:.3;
-			vertical-align:baseline;
-			font-size:1rem;
+		justify-content: space-between;
+		& sub {
+			opacity: 0.3;
+			vertical-align: baseline;
+			font-size: 1rem;
 			/* font-size:.6em; */
-			display:flex;
-			align-self:right
+			display: flex;
+			align-self: right;
+		}
+	}
+	
+}
+#Skills {
+	& .intro {
+		margin-left: -0.5rem;
+		margin-right: -0.5rem;
+		@media (--viewport-s) {
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
-#Skills .intro{
-	margin-left:-.5rem;
-	margin-right:-.5rem;
-	@media (--viewport-s){
-		margin-left:auto;
-		margin-right:auto;
-	}
-}
 
-#Vaardigheden .intro .container{padding-left:0;padding-right:0;}
+#Vaardigheden .intro .container {
+	padding-left: 0;
+	padding-right: 0;
+}

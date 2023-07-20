@@ -48,15 +48,14 @@
 	opacity: 0;
 } */
 
-
-.badge{
-	font-size:.9em;
-	display:inline-block;
-	margin-right:.2rem;
-	margin-bottom:.2rem;
-	padding: 0 .15rem ;
-	border-radius:.2rem;
-	background:#123456;
-	color:white;
-	line-height:1.3em;
+.badge {
+	font-size: 0.9em;
+	display: inline-block;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+	padding: 0.15rem 0.3rem;
+	border-radius: 0.3rem;
+	background: #123456;
+	color: white;
+	line-height: 1.3em;
 }

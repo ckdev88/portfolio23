@@ -1,13 +1,13 @@
-#container{
-	max-width:100%;
+#container {
+	max-width: 100%;
 }
 
-@media (--viewport-m){
-	#nav-container,main{
-		padding-left:1rem;
-		padding-right:1rem;
+@media (--viewport-m) {
+	#nav-container {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
-	#homelink img{
-		height:24px!important;
+	#homelink img {
+		height: 24px !important;
 	}
 }

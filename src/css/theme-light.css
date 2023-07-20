@@ -26,7 +26,7 @@ html[data-theme="light"] {
 	h3,
 	#pages a,
 	#nav-languages {
-		color: #282828;
+		color: #252525;
 	}
 
 	& h1,
@@ -47,7 +47,7 @@ html[data-theme="light"] {
 	} */
 	& #header-page {
 		background: #D9D2D1;
-		border-bottom:2px dashed #282828;
+		border-bottom:2px dashed #252525;
 	}
 	
 	& #header-page{
@@ -99,13 +99,13 @@ html[data-theme="light"] {
 	#nav-accessibility-language svg path,
 	#sun-svg path,
 	#moon-svg path {
-		fill: #282828
+		fill: #252525
 	}
 	#pages a:hover,
 	#pages a:focus,
 	#page a:active,
 	#page .active {
-		border-color: #282828;
+		border-color: #252525;
 	}
 	#homelink img.dark{
 		display:block;
