@@ -62,6 +62,7 @@ h1 {
 		display: block;
 		font-size: 0.7em;
 		opacity: 0.4;
+		line-height:1em;
 	}
 }
 h2 {
@@ -138,7 +139,4 @@ article > div {
 main {
 	max-width: 100%;
 	overflow-x: hidden;
-}
-footer {
-	margin-top: 4rem;
 }

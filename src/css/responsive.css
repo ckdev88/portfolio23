@@ -5,6 +5,7 @@
 	padding-bottom: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
+	min-width:320px;
 	@media (--viewport-m) {
 		padding-left: 0;
 		padding-right: 0;
@@ -13,11 +14,6 @@
 /* responsive overrides */
 @media (--viewport-l) {
 	aside .grid-container {
-	}
-}
-@media (--viewport-s) {
-	#hi .logo img {
-		height: 220px;
 	}
 }
 @media (--viewport-xs) {

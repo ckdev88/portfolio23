@@ -70,12 +70,12 @@ article.grid-container {
 		}
 
 		& p {
+			padding-bottom: 1rem;
 			@media (--viewport-l) {
 				padding-right: 3rem;
 			}
 			@media (--viewport-m) {
 				padding-right: 0;
-				padding-bottom: 1rem;
 			}
 		}
 	}
