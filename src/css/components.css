@@ -61,7 +61,18 @@
 	width: 60%;
 }
 
+.past-article-intro {
+	@media (--viewport-xs) {
+		padding-right: 0;
+		align-self: auto;
+	}
+}
+
 article.grid-container {
+	@media (--viewport-xs) {
+		display: block;
+		grid-template-columns: auto;
+	}
 	& .past-article-intro {
 		align-self: center;
 		@media (--viewport-m) {
@@ -161,10 +172,6 @@ article.grid-container {
 		}
 	}
 	& .thumbs {
-		@media (--viewport-l) {
-			/* display: flex; */
-			/* align-items: center; */
-		}
 		& .grid-item {
 			background: #fff;
 			border-radius: 0.4rem;

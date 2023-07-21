@@ -15,13 +15,6 @@ img.skilltree {
 			@media (--viewport-m) {
 				font-size: 0.8em;
 			}
-			@media (--viewport-xs) {
-				/* hide, but not for screen readers */
-				/* position: absolute;
-				overflow: hidden;
-				width: 0;
-				height: 0; */
-			}
 		}
 	}
 	& ul,
@@ -89,25 +82,12 @@ img.skilltree {
 			}
 		}
 
-		/* &:after{
-			display:block;
-			float:right;
-			content:"&rarr;";
-			width:3rem;
-		} */
 		&.active {
 			cursor: auto;
 
 			& .arrow-guide {
 				opacity: 0.8;
 			}
-			/* 			
-			background: 
-				linear-gradient(45deg, transparent 50%, #fff 50%),
-            	linear-gradient(-45deg, transparent 50%, #f00 50%); 
-			background-position: 100% 50%;
-			background-size: 6rem 6rem;
-			background-repeat: no-repeat; */
 		}
 		&:first-child {
 			border-top: 0;
@@ -203,4 +183,3 @@ li.fundamentals {
 		}
 	}
 }
-/* the 13th floor */
