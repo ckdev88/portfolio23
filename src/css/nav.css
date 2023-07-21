@@ -18,8 +18,8 @@
 		width:600px;
 	}
 	& #pages {
-		@media (--viewport-s) {
-			display: none;
+		@media (--viewport-xs) {
+			/* display: none; */
 		}
 	}
 }

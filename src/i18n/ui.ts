@@ -8,7 +8,7 @@ export const languages = {
   
 export const ui = {
 	nl: {
-		'nav.Hi': 'Hi',
+		'nav.Hi': 'Hoi',
 		'nav.Future': 'Toekomst',
 		'nav.Past': 'Verleden',
 		'nav.Skills': 'Vaardigheden',
@@ -18,7 +18,7 @@ export const ui = {
 		'ui.Accessibility': 'Toegankelijkheid'
 	  },
 	en: {
-		'nav.Hi': 'Hi',
+		'nav.Hi': 'Ola',
 		'nav.Future': 'Future',
 		'nav.Past': 'Past',
 		'nav.Skills': 'Skills',

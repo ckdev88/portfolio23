@@ -6,15 +6,6 @@ const t = useTranslations(lang);
 
 import NavItem from "./NavItem.astro";
 const logoSrcLight = "../img/ckdev-logo-light.svg";
-
-/*--- tijdelijk talen uitschakelen... 
-	<NavItem title={t("nav.Hi")} lang={lang} />
-		<NavItem title={t("nav.Future")} lang={lang} />
-		<NavItem title={t("nav.Past")} lang={lang} />
-		<NavItem title={t("nav.Skills")} lang={lang} />
-		<NavItem title={t("nav.Tools")} lang={lang} />
-		<NavItem title={t("nav.Contact")} lang={lang} />
-*/
 ---
 
 <nav id="nav-top" role="navigation" aria-label="Hoofdmenu">
@@ -23,10 +14,8 @@ const logoSrcLight = "../img/ckdev-logo-light.svg";
 	</a>
 	<ul id="pages">
 		<NavItem title={t("nav.Hi")} lang={lang} />
-		<NavItem title={t("nav.Future")} lang={lang} />
 		<NavItem title={t("nav.Past")} lang={lang} />
 		<NavItem title={t("nav.Skills")} lang={lang} />
-		<NavItem title={t("nav.Tools")} lang={lang} />
 		<NavItem title={t("nav.Contact")} lang={lang} />
 	</ul>
 </nav>

@@ -60,7 +60,7 @@ footer,
 			top: 5rem;
 			z-index: 1;
 			margin-left: 0;
-			width: var(--container-width);
+			width: calc(var(--container-width) - 1rem);
 			min-width: 320px;
 		}
 		& #logo-ck-big {

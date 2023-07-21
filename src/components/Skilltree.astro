@@ -2,7 +2,6 @@
 import SkilltreeCat from "./SkilltreeCat.astro";
 import SkilltreeItem from "./SkilltreeItem.astro";
 
-import SectionSkillsItem from "./SectionSkillsItem.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -22,7 +21,7 @@ import Tools from "./Tools.astro";
 			<h3 class="tool-item-wrapper">
 				<div class="tool-item">
 					<img
-						src="../img/html5-logo.png"
+						src="../img/html5-shield.svg"
 						alt="HTML 5"
 						width="102"
 						height="115"
