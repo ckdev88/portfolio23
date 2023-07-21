@@ -6,7 +6,8 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<section id={t("nav.Skills")}>
+<section id="section-skills">
+	<a name={t("nav.Skills")} class="section-anchor"></a>
 	<div class="container">
 		<Skilltree />
 	</div>

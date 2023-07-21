@@ -64,6 +64,9 @@
 article.grid-container {
 	& .past-article-intro {
 		align-self: center;
+		@media (--viewport-m) {
+			margin-bottom: 1rem;
+		}
 		@media (--viewport-xl) {
 			width: calc(564px - 4rem);
 			padding-right: 2rem;
@@ -82,7 +85,7 @@ article.grid-container {
 	& .thumbs {
 		padding-left: 2rem;
 		padding-right: 0;
-		align-self:center;
+		align-self: center;
 		@media (--viewport-xl) {
 			width: calc(564px -4rem);
 		}
@@ -93,7 +96,7 @@ article.grid-container {
 	& .thumbIMG {
 		max-width: 90%;
 		margin: 0 auto;
-		height:auto;
+		height: auto;
 	}
 	@media (--viewport-m) {
 	}
@@ -101,6 +104,9 @@ article.grid-container {
 article.grid-container.reverse {
 	grid-auto-flow: dense;
 	direction: rtl;
+	@media (--viewport-m) {
+		direction: ltr;
+	}
 	& .thumbs {
 		padding-right: 2rem;
 		padding-left: 0;
@@ -249,4 +255,3 @@ section,
 	z-index: 2;
 	position: relative;
 }
-

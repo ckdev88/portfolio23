@@ -1,6 +1,8 @@
 #nav-container {
 	display: flex;
-	justify-content: space-between;
+	@media (--viewport-m){
+		justify-content: space-between;
+	}
 	align-items: center;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -11,12 +13,14 @@
 }
 #nav-top {
 	display: flex;
-	font-weight: 500;
 	align-items: center;
 	width:100%;
-	@media (--viewport-xl) {
-		width:600px;
+	font-weight: 500;
+	@media (--viewport-m){
+		font-weight:600;
+		justify-content:space-between;
 	}
+	
 	& #pages {
 		@media (--viewport-xs) {
 			/* display: none; */
@@ -26,7 +30,7 @@
 
 #homelink {
 	transition:1s filter ease-in-out;
-	display: block;
+	/* display: block; */
 	height: auto;
 	padding: 0;
 	border-radius: 0;
@@ -84,7 +88,7 @@
 	flex-wrap: wrap;
 	padding-left: 1rem;
 	@media (--viewport-xl), (--viewport-l) {
-		width: 650px;
+		width: 100%;
 	}
 	@media (--viewport-m) {
 		width: auto;

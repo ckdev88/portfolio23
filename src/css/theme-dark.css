@@ -59,16 +59,11 @@ html[data-theme="dark"] {
 		}
 	}
 
-	#Hi {
-		& .logo {
-			filter: invert(0.3);
-		}
-	}
 	#homelink {
 		filter: invert(0);
 	}
 
-	& #Hi {
+	& #section-hi {
 		background: linear-gradient(
 			180deg,
 			transparent 0%,
@@ -76,11 +71,11 @@ html[data-theme="dark"] {
 			rgba(0, 0, 0, 0.4) 100%
 		);
 		& .logo {
-			opacity: 0.05;
-		}
+			filter: invert(0.3);
+		}		
 	}
 
-	& #Past {
+	& #section-past {
 		background: linear-gradient(
 			180deg,
 			rgba(0, 0, 0, 0.4) 0%,
@@ -89,7 +84,7 @@ html[data-theme="dark"] {
 		);
 	}
 
-	& #Skills {
+	& #section-skills {
 		background: linear-gradient(
 			180deg,
 			transparent 0%,
@@ -117,7 +112,7 @@ html[data-theme="dark"] {
 		border-color: #fafafa;
 	}
 	footer a,
-	#Contact a {
+	#section-contact a {
 		color: #f36547;
 		text-shadow: 0 0 1px black;
 	}

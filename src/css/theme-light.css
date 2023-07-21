@@ -59,7 +59,7 @@ html[data-theme="light"] {
 		}
 	}
 
-	#Hi {
+	#section-hi {
 		& .logo {
 			filter: invert(0.5) saturate(1);
 		}
@@ -68,8 +68,8 @@ html[data-theme="light"] {
 		filter: invert(1);
 	}
 
-	& #Hi,
-	#Skills {
+	& #section-hi,
+	#section-skills {
 		background: linear-gradient(
 			180deg,
 			transparent 0%,
@@ -78,8 +78,8 @@ html[data-theme="light"] {
 		);
 	}
 
-	& #Past,
-	#Contact {
+	& #section-past,
+	#section-contact {
 		background: linear-gradient(
 			180deg,
 			rgba(0, 0, 0, 0.05) 0%,
@@ -88,6 +88,12 @@ html[data-theme="light"] {
 		);
 	}
 
+	
+	
+	
+	
+	
+	
 	& #skilltree .arrow-guide path {
 		fill: #e35508;
 	}
@@ -108,7 +114,7 @@ html[data-theme="light"] {
 		border-color: #252525;
 	}
 	footer a,
-	#Contact a {
+	#section-contact a {
 		text-shadow: 0 0 1px white;
 	}
 	#skilltree {

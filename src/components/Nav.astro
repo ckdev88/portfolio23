@@ -1,4 +1,5 @@
 ---
+import HeaderNavAccessibility from "../components/HeaderNavAccessibility.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 
@@ -10,7 +11,12 @@ const logoSrcLight = "../img/ckdev-logo-light.svg";
 
 <nav id="nav-top" role="navigation" aria-label="Hoofdmenu">
 	<a href="./" title="Terug naar de homepage" id="homelink">
-		<img src={logoSrcLight} alt="CK, Front-end developer" height="32" />
+		<img
+			src={logoSrcLight}
+			alt="CK, Front-end developer"
+			height="32"
+			id="homelink-img"
+		/>
 	</a>
 	<ul id="pages">
 		<NavItem title={t("nav.Hi")} lang={lang} />
@@ -18,4 +24,5 @@ const logoSrcLight = "../img/ckdev-logo-light.svg";
 		<NavItem title={t("nav.Skills")} lang={lang} />
 		<NavItem title={t("nav.Contact")} lang={lang} />
 	</ul>
+	<HeaderNavAccessibility lang={lang} />
 </nav>

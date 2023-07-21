@@ -17,8 +17,18 @@ footer,
 		padding-bottom: 0.5rem;
 	}
 }
+.section-anchor {
+	position: absolute;
+	margin-top: -2rem;
+	@media (--viewport-m){
+		margin-top:0;
+	}
+	@media (--viewport-s){
+		margin-top:1rem;
+	}
+}
 
-#Hi {
+#section-hi {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 	@media (--viewport-m) {
@@ -70,6 +80,8 @@ footer,
 				height: 313px;
 			}
 			@media (--viewport-l) {
+				width: 244px;
+				height: 313px;
 			}
 			@media (--viewport-m) {
 				width: 263px;
@@ -87,7 +99,7 @@ footer,
 	}
 }
 
-#Past {
+#section-past {
 	padding-bottom: 5rem;
 	& .container {
 		padding-top: 2rem;
@@ -112,7 +124,7 @@ footer,
 		}
 	}
 }
-#Skills {
+#section-skills {
 	& .intro {
 		margin-left: -0.5rem;
 		margin-right: -0.5rem;

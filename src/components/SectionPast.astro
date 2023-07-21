@@ -7,7 +7,8 @@ import SectionPastItem from "./SectionPastItem.astro";
 import BadgeItem from "./BadgeItem.astro";
 ---
 
-<section id={t("nav.Past")}>
+<section id="section-past">
+	<a name={t("nav.Past")} class="section-anchor"></a>
 	<div class="intro">
 		<div class="container">
 			<h2>Some of my work.</h2>
@@ -69,21 +70,16 @@ import BadgeItem from "./BadgeItem.astro";
 					<h3>Visma PlusPort<sub>2017 - 2021</sub></h3>
 					<p>
 						Leading a small team responsible for the front-end and
-						accessibility (WCAG 2.1) of our own websites as well as
-						some clients' websites. Also in charge of the front-end
-						and achieving WCAG2.1 certification for our main
-						product: the LMS (learning management system).
+						accessibility (WCAG 2.1) of our main product: PlusPort
+						LMS, as well as our own websites and other web services.
 					</p>
 					<BadgeItem title="Bootstrap" />
-					<BadgeItem title="SEO" />
 					<BadgeItem title="WCAG" />
+					<BadgeItem title="React" />
 					<BadgeItem title="XD" />
 					<BadgeItem title="ActiveCampaign" />
-					<BadgeItem title="React" />
-					<BadgeItem title="SASS" />
 					<BadgeItem title="WordPress" />
 					<BadgeItem title="PHP" />
-					<BadgeItem title="MailChimp" />
 				</div>
 				<aside class="thumbs" aria-hidden="true">
 					<div class="grid-container">

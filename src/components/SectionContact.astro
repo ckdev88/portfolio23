@@ -4,7 +4,8 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<section id={t("nav.Contact")}>
+<section id="section-contact">
+	<a name={t("nav-contact")} class="section-anchor"></a>
 	<div class="container">
 		<h2>Get in touch?</h2>
 		You can e-mail me at <a href="mailto:ckdev88@outlook.com"
