@@ -20,11 +20,11 @@ footer,
 .section-anchor {
 	position: absolute;
 	margin-top: -2rem;
-	@media (--viewport-m){
-		margin-top:0;
+	@media (--viewport-m) {
+		margin-top: 0;
 	}
-	@media (--viewport-s){
-		margin-top:1rem;
+	@media (--viewport-s) {
+		margin-top: 1rem;
 	}
 }
 
@@ -52,7 +52,6 @@ footer,
 	}
 
 	& .intro {
-		/* padding: 3rem 0; */
 		align-self: center;
 		@media (--viewport-s) {
 			position: relative;
@@ -67,11 +66,14 @@ footer,
 		@media (--viewport-s) {
 			position: absolute;
 			opacity: 0.2;
-			top: 5rem;
+			top: 6.5rem;
 			z-index: 1;
 			margin-left: 0;
 			width: calc(var(--container-width) - 1rem);
 			min-width: 320px;
+		}
+		@media (--viewport-xs) {
+			top: 9rem;
 		}
 		& #logo-ck-big {
 			max-width: 100%;
