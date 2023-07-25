@@ -17,20 +17,17 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 		<meta name="viewport" content="width=device-width" />
 		<meta
 			name="description"
-			content="The portfolio of Cors Kester, Front-end web developer."
+			content="The portfolio of CK, Front-end web developer."
 		/>
 		<title>{title}</title>
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="theme-color" content="#3367D6" />
-		<meta
-			property="og:site_name"
-			content="Cors, Front-end web developer."
-		/>
+		<meta property="og:site_name" content="CK, Front-end web developer." />
 		<meta property="og:url" content="https://ckdev88.github.io" />
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:title"
-			content="Cors Kester | Frontend Developer & Accessibility specialist"
+			content="CK | Frontend Developer & Accessibility specialist"
 		/>
 		<meta
 			property="og:description"
@@ -44,16 +41,14 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 	</head>
 	<body>
 		<div id="theme-backdrop"></div>
-		<slot />
+		<slot lang={lang} />
 		<script>
 			const scrollline = document.querySelector(".scroll-line");
 			function fillscrollline() {
 				const windowHeight = window.innerHeight;
-				const fullHeight =
-					document.getElementById("container").clientHeight;
+				const fullHeight = document.getElementById("container").clientHeight;
 				const scrolled = window.scrollY;
-				const percentScrolled =
-					(scrolled / (fullHeight - windowHeight)) * 100;
+				const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
 				scrollline.style.width = percentScrolled + "%";
 			}
 			window.addEventListener("scroll", fillscrollline);

@@ -3,10 +3,10 @@ const { title, lang } = Astro.props;
 
 import { useTranslations } from "../i18n/utils";
 const t = useTranslations(lang);
-
-/*--- tijdelijk talen uitschakelen... 
-<li><a href={`/${lang}/#${title}`} title={`${t('lt.JumpTo')} ${title}`}>{title}</a></li>
-*/
 ---
 
-<li><a href={`/#${title}`} title={`${t("lt.JumpTo")} ${title}`}>{title}</a></li>
+<li>
+	<a href={`/${lang}/#${title}`} title={`${t("lt.JumpTo")} ${title}`}>
+		{title}
+	</a>
+</li>

@@ -7,18 +7,30 @@ import SectionSkills from "../components/SectionSkills.astro";
 import SectionContact from "../components/SectionContact.astro";
 import Footer from "../components/Footer.astro";
 
-const lang = "en";
+let { lang } = Astro.props;
+if (!lang) {
+	lang = "en";
+}
 ---
 
-<Layout title="Cors Kester, Front-end Developer." lang={lang}>
+<Layout title="CK, Front-end Developer." lang={lang}>
 	<div id="container">
-		<Header />
+		<Header lang={lang} />
 		<main>
-			<SectionHi />
-			<SectionPast />
-			<SectionSkills />
-			<SectionContact />
+			<SectionHi lang={lang} />
+			<SectionPast lang={lang} />
+			<SectionSkills lang={lang} />
+			<SectionContact lang={lang} />
 		</main>
 		<Footer />
 	</div>
 </Layout>
+
+<!-- <script>
+	window.onload = function(){
+		console.log(window.location.href);
+		console.log('window.location.href :>> ', window.location.href);
+		var url=window.location.href;
+		return window.location.href=url+"/en/";
+	}
+</script> -->

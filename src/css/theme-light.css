@@ -44,7 +44,7 @@ html[data-theme="light"] {
 		background: #d9d2d1;
 		border-bottom: 2px dashed #252525;
 	}
-	
+
 	& #header-page {
 		animation-name: mymove;
 		animation-duration: 1s;
@@ -67,7 +67,7 @@ html[data-theme="light"] {
 			filter: invert(0.5) saturate(1);
 		}
 	}
-	#homelink{
+	#homelink {
 		filter: invert(1);
 	}
 
@@ -90,13 +90,6 @@ html[data-theme="light"] {
 			transparent 100%
 		);
 	}
-
-	
-	
-	
-	
-	
-	
 	& #skilltree .arrow-guide path {
 		fill: #e35508;
 	}

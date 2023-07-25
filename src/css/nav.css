@@ -1,6 +1,6 @@
 #nav-container {
 	display: flex;
-	@media (--viewport-m){
+	@media (--viewport-m) {
 		justify-content: space-between;
 	}
 	align-items: center;
@@ -14,13 +14,13 @@
 #nav-top {
 	display: flex;
 	align-items: center;
-	width:100%;
+	width: 100%;
 	font-weight: 500;
-	@media (--viewport-m){
-		font-weight:600;
-		justify-content:space-between;
+	@media (--viewport-m) {
+		font-weight: 600;
+		justify-content: space-between;
 	}
-	
+
 	& #pages {
 		@media (--viewport-xs) {
 			/* display: none; */
@@ -29,7 +29,7 @@
 }
 
 #homelink {
-	transition:1s filter ease-in-out;
+	transition: 1s filter ease-in-out;
 	/* display: block; */
 	height: auto;
 	padding: 0;
@@ -105,7 +105,7 @@
 		padding: 0 0.8rem;
 		height: max-content;
 		@media (--viewport-m) {
-			padding: 0 0.6rem;
+			padding: 0 0.25rem;
 		}
 	}
 	& a {
@@ -131,8 +131,12 @@
 	padding-bottom: 0.25rem;
 	padding-right: 0.5rem;
 	padding-inline-start: 1.5rem;
-	padding-inline-end: 1.5rem;
+	padding-inline-end: 0.5rem;
 	border-image-width: 0 !important;
+	@media (--viewport-s) {
+		padding-inline-end: 0 !important;
+		padding-right: 0 !important;
+	}
 	& option {
 		background: #123456;
 		color: #fff;
