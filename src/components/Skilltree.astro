@@ -3,7 +3,7 @@ import SkilltreeCat from "./SkilltreeCat.astro";
 import SkilltreeItem from "./SkilltreeItem.astro";
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
-const lang = getLangFromUrl(Astro.url);
+const { lang } = Astro.props;
 const t = useTranslations(lang);
 import Tools from "./Tools.astro";
 ---
@@ -11,8 +11,19 @@ import Tools from "./Tools.astro";
 <div class="intro">
 	<div class="container">
 		<h2>Skill stack</h2>
-		Over the years, many skills have come and partially gone, these are the ones
-		that stayed.
+		{
+			lang == "en" ? (
+				<p>
+					Over the years, many skills have come and partially gone, these are
+					the ones that stayed.
+				</p>
+			) : (
+				<p>
+					Door de jaren heen zijn vele technieken gekomen en gegaan, deze zijn
+					gebleven.
+				</p>
+			)
+		}
 	</div>
 </div>
 <div id="skilltree-wrapper" class="skills-container">
@@ -53,15 +64,9 @@ import Tools from "./Tools.astro";
 					</ul>
 				</li>
 			</ul>
-			<svg
-				version="1.1"
-				xmlns="http://www.w3.org/2000/svg"
-				class="arrow-guide"
-			>
-				<path
-					d="M 0 0 L 0 12 L 9 6 z"
-					stroke="colourname"
-					fill="url(#fill)"></path>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="arrow-guide">
+				<path d="M 0 0 L 0 12 L 9 6 z" stroke="colourname" fill="url(#fill)"
+				></path>
 			</svg>
 		</li>
 		<li id="st-css" class="li-level-1">
@@ -97,15 +102,9 @@ import Tools from "./Tools.astro";
 					</ul>
 				</li>
 			</ul>
-			<svg
-				version="1.1"
-				xmlns="http://www.w3.org/2000/svg"
-				class="arrow-guide"
-			>
-				<path
-					d="M 0 0 L 0 12 L 9 6 z"
-					stroke="colourname"
-					fill="url(#fill)"></path>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="arrow-guide">
+				<path d="M 0 0 L 0 12 L 9 6 z" stroke="colourname" fill="url(#fill)"
+				></path>
 			</svg>
 		</li>
 		<li id="st-javascript" class="li-level-1">
@@ -143,64 +142,42 @@ import Tools from "./Tools.astro";
 					</ul>
 				</li>
 			</ul>
-			<svg
-				version="1.1"
-				xmlns="http://www.w3.org/2000/svg"
-				class="arrow-guide"
-			>
-				<path
-					d="M 0 0 L 0 12 L 9 6 z"
-					stroke="colourname"
-					fill="url(#fill)"></path>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="arrow-guide">
+				<path d="M 0 0 L 0 12 L 9 6 z" stroke="colourname" fill="url(#fill)"
+				></path>
 			</svg>
 		</li>
 	</ul>
 	<div class="grid-item tools">
-		<Tools />
+		<Tools lang={lang} />
 	</div>
 </div>
 
 <script>
 	document.addEventListener("DOMContentLoaded", function (event) {
-		document
-			.querySelector("#st-html")
-			?.addEventListener("mouseover", () => {
-				document.querySelector("#st-html")?.classList.add("active");
-				document.querySelector("#st-css")?.classList.remove("active");
-				document
-					.querySelector("#st-javascript")
-					?.classList.remove("active");
-				document
-					.querySelector("#tools-html")
-					?.classList.remove("hidden");
-				document.querySelector("#tools-css")?.classList.add("hidden");
-				document
-					.querySelector("#tools-javascript")
-					?.classList.add("hidden");
-			});
+		document.querySelector("#st-html")?.addEventListener("mouseover", () => {
+			document.querySelector("#st-html")?.classList.add("active");
+			document.querySelector("#st-css")?.classList.remove("active");
+			document.querySelector("#st-javascript")?.classList.remove("active");
+			document.querySelector("#tools-html")?.classList.remove("hidden");
+			document.querySelector("#tools-css")?.classList.add("hidden");
+			document.querySelector("#tools-javascript")?.classList.add("hidden");
+		});
 		document.querySelector("#st-css")?.addEventListener("mouseover", () => {
 			document.querySelector("#st-html")?.classList.remove("active");
 			document.querySelector("#st-css")?.classList.add("active");
-			document
-				.querySelector("#st-javascript")
-				?.classList.remove("active");
+			document.querySelector("#st-javascript")?.classList.remove("active");
 			document.querySelector("#tools-css")?.classList.remove("hidden");
 			document.querySelector("#tools-html")?.classList.add("hidden");
-			document
-				.querySelector("#tools-javascript")
-				?.classList.add("hidden");
+			document.querySelector("#tools-javascript")?.classList.add("hidden");
 		});
 		document
 			.querySelector("#st-javascript")
 			?.addEventListener("mouseover", () => {
 				document.querySelector("#st-html")?.classList.remove("active");
 				document.querySelector("#st-css")?.classList.remove("active");
-				document
-					.querySelector("#st-javascript")
-					?.classList.add("active");
-				document
-					.querySelector("#tools-javascript")
-					?.classList.remove("hidden");
+				document.querySelector("#st-javascript")?.classList.add("active");
+				document.querySelector("#tools-javascript")?.classList.remove("hidden");
 				document.querySelector("#tools-html")?.classList.add("hidden");
 				document.querySelector("#tools-css")?.classList.add("hidden");
 			});

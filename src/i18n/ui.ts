@@ -1,7 +1,7 @@
 export const languages = {
 	nl: "NL", //Nederlands
 	en: "EN", //English
-	pt: "PT", //Português
+	// pt: "PT", //Português
 };
 
 export const defaultLang = "en";
