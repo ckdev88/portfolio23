@@ -46,7 +46,6 @@ if (Intl) {
 	var tzArr = userTimeZone.split("/");
 	userRegion = tzArr[0];
 	userCity = tzArr[tzArr.length - 1];
-	console.log("tzArr :>> ", tzArr);
 	userCountry = timeZoneCityToCountry[userCity]; // geeft undefined by irrelevante steden/landen, die zijn uit object timeZoneCityToCountry verwijderd, voor fallback op "en"
 }
 
