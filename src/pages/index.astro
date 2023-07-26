@@ -1,36 +1,5 @@
 ---
-import Layout from "../layouts/Base.astro";
-import Header from "../components/Header.astro";
-import SectionHi from "../components/SectionHi.astro";
-import SectionPast from "../components/SectionPast.astro";
-import SectionSkills from "../components/SectionSkills.astro";
-import SectionContact from "../components/SectionContact.astro";
-import Footer from "../components/Footer.astro";
-
-let { lang } = Astro.props;
-if (!lang) {
-	lang = "en";
-}
+import LanguageDetect from "../components/LanguageDetect.astro";
 ---
 
-<Layout title="CK, Front-end Developer." lang={lang}>
-	<div id="container">
-		<Header lang={lang} />
-		<main>
-			<SectionHi lang={lang} />
-			<SectionPast lang={lang} />
-			<SectionSkills lang={lang} />
-			<SectionContact lang={lang} />
-		</main>
-		<Footer />
-	</div>
-</Layout>
-
-<!-- <script>
-	window.onload = function(){
-		console.log(window.location.href);
-		console.log('window.location.href :>> ', window.location.href);
-		var url=window.location.href;
-		return window.location.href=url+"/en/";
-	}
-</script> -->
+<LanguageDetect />
