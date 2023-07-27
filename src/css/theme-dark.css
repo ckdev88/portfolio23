@@ -1,6 +1,3 @@
-#theme-backdrop {
-	transition: opacity 0.5s ease-in-out, background-color 0.5 ease-in-out;
-}
 html[data-theme="dark"] {
 	& #theme-backdrop {
 		transition: background-color 0.5 ease-in-out;
@@ -56,10 +53,11 @@ html[data-theme="dark"] {
 		}
 		100% {
 			background-color: #190d0a;
+			background-color: #f00;
 		}
 	}
 
-	#homelink {
+	& #homelink {
 		filter: invert(0);
 	}
 
@@ -72,7 +70,7 @@ html[data-theme="dark"] {
 		);
 		& .logo {
 			filter: invert(0.3);
-		}		
+		}
 	}
 
 	& #section-past {
@@ -96,27 +94,27 @@ html[data-theme="dark"] {
 		fill: #e35508;
 	}
 
-	#nav-top a {
+	& #nav-top a {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
 
-	#nav-accessibility-language svg path,
+	& #nav-accessibility-language svg path,
 	#sun-svg path,
 	#moon-svg path {
 		fill: #f9f9f9;
 	}
-	#pages a:hover,
+	& #pages a:hover,
 	#pages a:focus,
 	#page a:active,
 	#page .active {
 		border-color: #fafafa;
 	}
-	footer a,
+	& footer a,
 	#section-contact a {
 		color: #f36547;
 		text-shadow: 0 0 1px black;
 	}
-	#skilltree {
+	& #skilltree {
 		& .li-level-2 {
 			& h4 {
 				color: #817875;

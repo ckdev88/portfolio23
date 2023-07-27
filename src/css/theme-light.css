@@ -1,8 +1,5 @@
-#theme-backdrop {
-	transition: opacity 0.5s ease-in-out, background-color 0.5 ease-in-out;
-}
 html[data-theme="light"] {
-	section {
+	& section {
 		border-bottom-color: #30262388;
 	}
 	& #theme-backdrop {
@@ -58,16 +55,16 @@ html[data-theme="light"] {
 			background-color: transparent;
 		}
 		100% {
-			background-color: #d9d2d1;
+			background-color: #ff0;
 		}
 	}
 
-	#section-hi {
+	& #section-hi {
 		& .logo {
 			filter: invert(0.5) saturate(1);
 		}
 	}
-	#homelink {
+	& #homelink {
 		filter: invert(1);
 	}
 
@@ -94,26 +91,26 @@ html[data-theme="light"] {
 		fill: #e35508;
 	}
 
-	#nav-top a {
+	& #nav-top a {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
 
-	#nav-accessibility-language svg path,
+	& #nav-accessibility-language svg path,
 	#sun-svg path,
 	#moon-svg path {
 		fill: #252525;
 	}
-	#pages a:hover,
+	& #pages a:hover,
 	#pages a:focus,
 	#page a:active,
 	#page .active {
 		border-color: #252525;
 	}
-	footer a,
+	& footer a,
 	#section-contact a {
 		text-shadow: 0 0 1px white;
 	}
-	#skilltree {
+	& #skilltree {
 		& .li-level-2 {
 			& h4 {
 				color: #7b6f6f;
