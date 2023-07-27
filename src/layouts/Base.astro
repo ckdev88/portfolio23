@@ -1,4 +1,5 @@
 ---
+import Visitors from "../components/Visitors.astro";
 import { getLangFromUrl } from "../i18n/utils";
 export interface Props {
 	title: string;
@@ -11,6 +12,7 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 
 <html id="html" lang={lang} data-theme="dark">
 	<head>
+		<Visitors />
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href={logoSrc} />
 		<link rel="stylesheet" href="../style.css" />
