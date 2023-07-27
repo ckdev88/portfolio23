@@ -38,6 +38,8 @@
 		"fast-glob": "^3.2.12",
 		"fastq": "^1.15.0",
 		"fill-range": "^7.0.1",
+		"firebase": "^10.1.0",
+		"firebase-tools": "^12.4.6",
 		"fs-extra": "^11.1.1",
 		"function-bind": "^1.1.1",
 		"get-caller-file": "^2.0.5",
