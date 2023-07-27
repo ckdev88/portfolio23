@@ -3,7 +3,7 @@ html[data-theme="light"] {
 		border-bottom-color: #30262388;
 	}
 	& #theme-backdrop {
-		transition: background-color 0.5 ease-in-out;
+		transition: background-color 0.3 ease-in-out;
 		background-color: #d9d2d1;
 		opacity: 1;
 	}
@@ -45,6 +45,9 @@ html[data-theme="light"] {
 	& #section-hi {
 		& .logo {
 			filter: invert(0.5) saturate(1);
+			animation-name: blinkbiglogo;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
 		}
 	}
 	& #homelink {
@@ -98,6 +101,31 @@ html[data-theme="light"] {
 			& h4 {
 				color: #7b6f6f;
 			}
+		}
+	}
+}
+@keyframes blinkbiglogo {
+	0% {
+		filter: invert(0.3);
+	}
+	50% {
+		filter: invert(0.8);
+	}
+	100% {
+		filter: invert(0.3);
+	}
+}
+
+@media (--viewport-s) {
+	@keyframes blinkbiglogo {
+		0% {
+			filter: invert(0.2);
+		}
+		50% {
+			filter: invert(0.4);
+		}
+		100% {
+			filter: invert(0.2);
 		}
 	}
 }
