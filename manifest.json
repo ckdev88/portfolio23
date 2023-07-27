@@ -1,6 +1,6 @@
 {
-	"short_name": "Portfolio CK",
-	"name": "Portfolio Front-end developer CK",
+	"short_name": "Portfolio Cors",
+	"name": "Portfolio Front-end developer Cors",
 
 	"icons": [
 		{
@@ -17,7 +17,7 @@
 		}
 	],
 
-	"description": "Portfolio mini website for CK frontend developer.",
+	"description": "Portfolio mini website for Cors, frontend developer.",
 	"theme_color": "#3367D6",
 	"lang": "en-US",
 	"background_color": "#3367D6",

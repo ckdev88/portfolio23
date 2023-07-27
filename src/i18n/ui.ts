@@ -16,7 +16,7 @@ export const ui = {
 		"nav.Contact": "Contact",
 		"lt.JumpTo": "Spring naar",
 		"ui.Accessibility": "Toegankelijkheid",
-		"hi-h1": "Hoi, ik ben CK,",
+		"hi-h1": "Hoi, ik ben Cors,",
 		"hi-h1-sub": "Front-end web developer.",
 		"hi-p":
 			"Meer dan 15 jaar professionele ervaring als front-end ontwikkelaar, werkend aan digitale producten van promotionele websites tot enterprise webshops.",
@@ -47,7 +47,7 @@ export const ui = {
 		"nav.Contact": "Contact",
 		"lt.JumpTo": "Jump to",
 		"ui.Accessibility": "Accessibility",
-		"hi-h1": "Hi, I'm CK,",
+		"hi-h1": "Hi, my name is Cors,",
 		"hi-h1-sub": "Front-end web developer.",
 		"hi-p":
 			"More than 15 years of professional experience building products for businesses ranging from simple promotional websites to enterprise webshops.",
@@ -66,7 +66,7 @@ export const ui = {
 		"nav.Contact": "Contato",
 		"nav.JumpTo": "Saltar para",
 		"ui.Accessibility": "Accessibility",
-		"hi-h1": "Ola, eu sou CK,",
+		"hi-h1": "Ola, eu sou Cors,",
 		"hi-h1-sub": "Front-end web desenvolvedor.",
 		"hi-p":
 			"More than 15 years of professional experience building products for businesses ranging from simple promotional websites to enterprise webshops.",
