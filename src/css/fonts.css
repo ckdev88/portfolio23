@@ -1,5 +1,4 @@
 @font-face {
 	font-family: "Outfit";
-	src: url("./font/Outfit.woff2") format("woff2");
-	/* font-display: optional; */
+	src: url("./Outfit.woff2") format("woff2");
 } 

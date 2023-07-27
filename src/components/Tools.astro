@@ -1,50 +1,77 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-const lang = getLangFromUrl(Astro.url);
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const { lang } = Astro.props;
 const t = useTranslations(lang);
 
-import ToolsItem from './ToolsItem.astro';
+import ToolsItem from "./ToolsItem.astro";
 ---
 
 <div id="Tools">
 	<div class="tools-grid" id="tools-html">
-		<ToolsItem img="../img/photoshop-logo.svg" name="Photoshop" h="64" w="62" />
-		<ToolsItem img="../img/html5-logo.png" name="HTML 5" w="57" h="64" />
-		<ToolsItem img="../img/figma-logo.svg" name="Figma" w="64" h="43" />
-		<ToolsItem img="../img/xd-logo.svg" name="Adobe XD" w="64" h="64" />
-		<ToolsItem img="../img/w3c-logo.svg" name="W3C Validator" w="64" h="43" />
-		<ToolsItem img="../img/wcag2.1AA-v-logo.svg" name="WCAG 2.1" w="64" h="23" />
-		<ToolsItem img="../img/astro-logo.svg" name="Astro" w="51" h="64" />
-		<ToolsItem img="../img/github-logo.svg" name="Github" w="64" h="64" />
-		<ToolsItem img="../img/wordpress-logo.png" name="WordPress" w="64" h="64" />
-		<ToolsItem img="../img/Bootstrap.svg" name="Bootstrap" w="64" h="64" />
-		<ToolsItem img="../img/litmus-logo.svg" name="Litmus" w="64" h="24" />
-		<ToolsItem img="../img/smarty-logo.png" name="Smarty" w="64" h="28" />
-		<ToolsItem img="../img/mailchimp-logo.svg" name="Mailchimp" w="56" h="64" />
-		<ToolsItem img="../img/deployteq-logo.svg" name="Deployteq" w="64" h="13" />
-		<ToolsItem img="../img/activecampaign-logo.svg" name="ActiveCampaign" w="42" h="64" />
+		<ToolsItem img="../img/photoshop-logo.svg" name="Photoshop" h="54" w="62" />
+		<ToolsItem img="../img/html5-shield.svg" name="HTML 5" w="57" h="54" />
+		<ToolsItem img="../img/figma-logo.svg" name="Figma" w="54" h="43" />
+		<ToolsItem img="../img/xd-logo.svg" name="Adobe XD" w="54" h="54" />
+		<ToolsItem img="../img/w3c-logo.svg" name="W3C Validator" w="54" h="43" />
+		<ToolsItem
+			img="../img/wcag2.1AA-v-logo.svg"
+			name="WCAG 2.1"
+			w="54"
+			h="23"
+		/>
+		<ToolsItem img="../img/astro-logo.svg" name="Astro" w="51" h="54" />
+		<ToolsItem img="../img/github-logo.svg" name="Github" w="54" h="54" />
+		<ToolsItem
+			img="../img/wordpress-logo.webp"
+			name="WordPress"
+			w="54"
+			h="54"
+		/>
+		<ToolsItem img="../img/Bootstrap.svg" name="Bootstrap" w="54" h="54" />
+		<ToolsItem img="../img/litmus-logo.svg" name="Litmus" w="54" h="24" />
+		<ToolsItem img="../img/smarty-logo.webp" name="Smarty" w="54" h="23" />
+		<ToolsItem img="../img/mailchimp-logo.svg" name="Mailchimp" w="56" h="54" />
+		<ToolsItem img="../img/deployteq-logo.svg" name="Deployteq" w="54" h="13" />
+		<ToolsItem
+			img="../img/activecampaign-logo.svg"
+			name="ActiveCampaign"
+			w="42"
+			h="54"
+		/>
 	</div>
 	<div class="tools-grid hidden" id="tools-css">
-		<ToolsItem img="../img/Bootstrap.svg" name="Bootstrap" w="64" h="64" />
-		<ToolsItem img="../img/css3-logo.svg" name="CSS 3" w="64" h="64" />
-		<ToolsItem img="../img/github-logo.svg" name="Github" w="64" h="64" />
-		<ToolsItem img="../img/sass-logo.svg" name="Sass" w="64" h="48" />
-		<ToolsItem img="../img/postcss-logo.svg" name="Post CSS" w="64" h="64" />
-		<ToolsItem img="../img/tailwind-css-logo.svg" name="Tailwind CSS" w="64" h="64" />
+		<ToolsItem img="../img/Bootstrap.svg" name="Bootstrap" w="54" h="54" />
+		<ToolsItem img="../img/css3-logo.svg" name="CSS 3" w="54" h="54" />
+		<ToolsItem img="../img/github-logo.svg" name="Github" w="54" h="54" />
+		<ToolsItem img="../img/sass-logo.svg" name="Sass" w="54" h="48" />
+		<ToolsItem img="../img/postcss-logo.svg" name="Post CSS" w="54" h="54" />
+		<ToolsItem
+			img="../img/tailwind-css-logo.svg"
+			name="Tailwind CSS"
+			w="54"
+			h="54"
+		/>
 	</div>
 	<div class="tools-grid hidden" id="tools-javascript">
-		<ToolsItem img="../img/es6-logo.png" name="EcmaScript 6" w="64" h="64" />
-		<ToolsItem img="../img/javascript-logo.svg" name="Javascript" w="56" h="64" />
-		<ToolsItem img="../img/typescript-logo.svg" name="TypeScript" w="64" h="64" />
-		<ToolsItem img="../img/nodejs-logo.svg" name="Node" w="64" h="39" />
-		<ToolsItem img="../img/gulp-logo.svg" name="GULP" w="29" h="64" />
-		<ToolsItem img="../img/webpack-logo.svg" name="WebPack" w="57" h="64" />
-		<ToolsItem img="../img/reactjs-logo.svg" name="React" w="64" h="57" />
-		<ToolsItem img="../img/vuejs-logo.svg" name="Vue JS" w="64" h="55" />
-		<ToolsItem img="../img/svelte-logo.svg" name="Svelte" w="53" h="64" />
-		<!-- overig -->
-		<!-- <ToolsItem img="../img/npm-logo.svg" name="NPM" /> -->
-		<!-- <ToolsItem img="../img/python-logo.svg" name="Python" /> -->
-		<!-- /overig -->
+		<ToolsItem img="../img/es6-logo.webp" name="EcmaScript 6" w="54" h="54" />
+		<ToolsItem
+			img="../img/javascript-logo.svg"
+			name="Javascript"
+			w="56"
+			h="54"
+		/>
+		<ToolsItem
+			img="../img/typescript-logo.svg"
+			name="TypeScript"
+			w="54"
+			h="54"
+		/>
+		<ToolsItem img="../img/astro-logo.svg" name="Astro" w="51" h="54" />
+		<ToolsItem img="../img/nodejs-logo.svg" name="Node" w="54" h="39" />
+		<ToolsItem img="../img/gulp-logo.svg" name="GULP" w="29" h="54" />
+		<ToolsItem img="../img/webpack-logo.svg" name="WebPack" w="57" h="54" />
+		<ToolsItem img="../img/reactjs-logo.svg" name="React" w="54" h="57" />
+		<ToolsItem img="../img/vuejs-logo.svg" name="Vue JS" w="54" h="55" />
+		<ToolsItem img="../img/svelte-logo.svg" name="Svelte" w="53" h="54" />
 	</div>
 </div>

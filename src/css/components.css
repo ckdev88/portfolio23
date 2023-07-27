@@ -61,28 +61,42 @@
 	width: 60%;
 }
 
+.past-article-intro {
+	@media (--viewport-xs) {
+		padding-right: 0;
+		align-self: auto;
+	}
+}
+
 article.grid-container {
+	@media (--viewport-xs) {
+		display: block;
+		grid-template-columns: auto;
+	}
 	& .past-article-intro {
 		align-self: center;
+		@media (--viewport-m) {
+			margin-bottom: 1rem;
+		}
 		@media (--viewport-xl) {
 			width: calc(564px - 4rem);
 			padding-right: 2rem;
 		}
 
 		& p {
+			padding-bottom: 1rem;
 			@media (--viewport-l) {
 				padding-right: 3rem;
 			}
 			@media (--viewport-m) {
 				padding-right: 0;
-				padding-bottom: 1rem;
 			}
 		}
 	}
 	& .thumbs {
 		padding-left: 2rem;
 		padding-right: 0;
-		align-self:center;
+		align-self: center;
 		@media (--viewport-xl) {
 			width: calc(564px -4rem);
 		}
@@ -93,7 +107,7 @@ article.grid-container {
 	& .thumbIMG {
 		max-width: 90%;
 		margin: 0 auto;
-		height:auto;
+		height: auto;
 	}
 	@media (--viewport-m) {
 	}
@@ -101,6 +115,9 @@ article.grid-container {
 article.grid-container.reverse {
 	grid-auto-flow: dense;
 	direction: rtl;
+	@media (--viewport-m) {
+		direction: ltr;
+	}
 	& .thumbs {
 		padding-right: 2rem;
 		padding-left: 0;
@@ -155,10 +172,6 @@ article.grid-container {
 		}
 	}
 	& .thumbs {
-		@media (--viewport-l) {
-			/* display: flex; */
-			/* align-items: center; */
-		}
 		& .grid-item {
 			background: #fff;
 			border-radius: 0.4rem;
@@ -249,4 +262,3 @@ section,
 	z-index: 2;
 	position: relative;
 }
-

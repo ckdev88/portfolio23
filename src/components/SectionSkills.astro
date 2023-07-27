@@ -1,14 +1,14 @@
 ---
-import Skilltree from './Skilltree.astro';
-import Tools from './Tools.astro';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-const lang = getLangFromUrl(Astro.url);
+import Skilltree from "./Skilltree.astro";
+import Tools from "./Tools.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const { lang } = Astro.props;
 const t = useTranslations(lang);
 ---
-<section id={t('nav.Skills')}>
+
+<section id="section-skills">
+	<span id={t("nav.Skills")} class="section-anchor"></span>
 	<div class="container">
-		<!-- <div class="grid-item skilltree"> -->
-			<Skilltree /> 
-		<!-- </div> -->
+		<Skilltree lang={lang} />
 	</div>
 </section>

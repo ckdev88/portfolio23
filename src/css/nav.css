@@ -1,61 +1,52 @@
 #nav-container {
 	display: flex;
-	justify-content: space-between;
+	@media (--viewport-m) {
+		justify-content: space-between;
+	}
 	align-items: center;
 	padding-top: 0;
-	padding-bottom: 0;	
-	@media (--viewport-s){
+	padding-bottom: 0;
+	@media (--viewport-s) {
 		/* margin-left:1rem;
 		margin-right:1rem; */
 	}
 }
 #nav-top {
 	display: flex;
-	font-weight: 500;
 	align-items: center;
-	& #pages{
-		@media (--viewport-s){
-			display:none;
+	width: 100%;
+	font-weight: 500;
+	@media (--viewport-m) {
+		font-weight: 600;
+	}
+
+	& #pages {
+		@media (--viewport-xs) {
+			/* display: none; */
 		}
 	}
 }
 
 #homelink {
-	position: absolute;
-	display: block;
-	width: 2rem;
+	transition: 1s filter ease-in-out;
+	/* display: block; */
+	height: auto;
 	padding: 0;
 	border-radius: 0;
 	z-index: 1;
-
+	position: relative;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	@media (--viewport-s) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	& > img {
 		display: block;
 		max-width: 100%;
-		height: auto;
-		fill: white;
-	}
-	@media (--viewport-s) {
-		/* display: none; */
-	}
-}
-
-#homelink {
-	max-width: 2em;
-	height: auto;
-	position: relative;
-	width: 100%;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	@media (--viewport-s){
-		padding-top:0;
-		padding-bottom:0;
-	}
-	/* opacity: 0.2; */
-	& img {
-		max-width: 100%;
-		width: auto;
 		height: 32px;
-		display: block;
+		width: 25px;
+		fill: white;
 	}
 }
 
@@ -91,18 +82,17 @@
 	margin: 0;
 }
 #pages {
-	font-size:.8rem;
+	font-size: 0.8rem;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-left: 1rem;
-	@media (--viewport-xl),
-	 (--viewport-l){
-		width:650px;
+	@media (--viewport-xl), (--viewport-l) {
+		width: 100%;
 	}
-	@media (--viewport-m){
-		width:auto;
+	@media (--viewport-m) {
+		width: auto;
 	}
-	@media (--viewport-s) {
+	@media (--viewport-xs) {
 		padding-left: 0;
 	}
 	line-height: 1em;
@@ -114,7 +104,7 @@
 		padding: 0 0.8rem;
 		height: max-content;
 		@media (--viewport-m) {
-			padding: 0 0.6rem;
+			padding: 0 0.25rem;
 		}
 	}
 	& a {
@@ -140,8 +130,12 @@
 	padding-bottom: 0.25rem;
 	padding-right: 0.5rem;
 	padding-inline-start: 1.5rem;
-	padding-inline-end: 1.5rem;
+	padding-inline-end: 0.5rem;
 	border-image-width: 0 !important;
+	@media (--viewport-s) {
+		padding-inline-end: 0 !important;
+		padding-right: 0 !important;
+	}
 	& option {
 		background: #123456;
 		color: #fff;
@@ -164,7 +158,7 @@
 }
 
 #theme-btn {
-	/* margin: 2px 0.5rem;  -- tijdelijk weg, omdat LanguagePicker uit staat*/ 
+	/* margin: 2px 0.5rem;  -- tijdelijk weg, omdat LanguagePicker uit staat*/
 	margin: 2px 0;
 }
 #nav-accessibility-language svg {

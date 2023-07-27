@@ -1,10 +1,11 @@
 ---
 import ThemeIcon from "./ThemeIcon.astro";
-// import LanguageIcon from "./LanguageIcon.astro";
-// import LanguagePicker from "./LanguagePicker.astro";
+import LanguageIcon from "./LanguageIcon.astro";
+import LanguagePicker from "./LanguagePicker.astro";
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
-const lang = getLangFromUrl(Astro.url);
+const { lang } = Astro.props;
+const langFromUrl = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
@@ -14,5 +15,5 @@ const t = useTranslations(lang);
 	aria-label={t("ui.Accessibility")}
 >
 	<ThemeIcon />
-	<!-- <LanguagePicker lang={lang} /> -->
+	<LanguagePicker lang={lang} />
 </nav>

@@ -1,4 +1,5 @@
 ---
+import Visitors from "../components/Visitors.astro";
 import { getLangFromUrl } from "../i18n/utils";
 export interface Props {
 	title: string;
@@ -6,33 +7,50 @@ export interface Props {
 }
 const { title, lang } = Astro.props;
 
-const logoSrc = "/img/ck-logo-13.svg";
+const logoSrc = "/img/ckdev-logo-light.svg";
 ---
 
 <html id="html" lang={lang} data-theme="dark">
 	<head>
+		<Visitors />
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href={logoSrc} />
-		<!-- <link rel="stylesheet" href="/fonts.css"/> -->
 		<link rel="stylesheet" href="../style.css" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Portfolio van CK Dev" />
+		<meta
+			name="description"
+			content="The portfolio of CK, Front-end web developer."
+		/>
 		<title>{title}</title>
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="theme-color" content="#3367D6" />
+		<meta property="og:site_name" content="CK, Front-end web developer." />
+		<meta property="og:url" content="https://ckdev88.github.io" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="CK | Frontend Developer & Accessibility specialist"
+		/>
+		<meta
+			property="og:description"
+			content="I believe the web should be as inclusive as possible, which means performance, ease of use and readability should always be prioritized."
+		/>
+		<meta
+			property="og:image"
+			content="https://ckdev88.github.io/img/ckdev-logo-bright.webp"
+		/>
+		<meta property="og:url" content="https://ckdev88.github.io" />
 	</head>
 	<body>
 		<div id="theme-backdrop"></div>
-		<slot />
+		<slot lang={lang} />
 		<script>
 			const scrollline = document.querySelector(".scroll-line");
 			function fillscrollline() {
 				const windowHeight = window.innerHeight;
-				const fullHeight =
-					document.getElementById("container").clientHeight;
+				const fullHeight = document.getElementById("container").clientHeight;
 				const scrolled = window.scrollY;
-				const percentScrolled =
-					(scrolled / (fullHeight - windowHeight)) * 100;
+				const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
 				scrollline.style.width = percentScrolled + "%";
 			}
 			window.addEventListener("scroll", fillscrollline);

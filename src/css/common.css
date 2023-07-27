@@ -41,12 +41,6 @@
 .dblock {
 	display: block;
 }
-/* .hidden {
-	visibility: hidden;
-	overflow: hidden;
-	height: 0;
-	opacity: 0;
-} */
 
 .badge {
 	font-size: 0.9em;
@@ -58,4 +52,26 @@
 	background: #123456;
 	color: white;
 	line-height: 1.3em;
+}
+.t-0 {
+	top: 0;
+}
+.sr-only {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
+.container {
+	max-width: var(--container-width);
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	min-width:320px;
+	@media (--viewport-m) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

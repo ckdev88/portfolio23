@@ -2,24 +2,22 @@
 import Layout from "../../layouts/Base.astro";
 import Header from "../../components/Header.astro";
 import SectionHi from "../../components/SectionHi.astro";
-import SectionFuture from "../../components/SectionFuture.astro";
 import SectionPast from "../../components/SectionPast.astro";
 import SectionSkills from "../../components/SectionSkills.astro";
-import Tools from "../../components/Tools.astro";
+import SectionContact from "../../components/SectionContact.astro";
 import Footer from "../../components/Footer.astro";
 
 const lang = "nl";
 ---
 
-<Layout title="Cors Kester, Front-end Developer." lang={lang}>
+<Layout title="CK, Front-end Developer." lang={lang}>
 	<div id="container">
-		<Header />
+		<Header lang={lang} />
 		<main>
-			<SectionHi />
-			<SectionFuture />
-			<!-- <SectionPast /> -->
-			<SectionSkills />
-			<!-- <Tools />			 -->
+			<SectionHi lang={lang} />
+			<SectionPast lang={lang} />
+			<SectionSkills lang={lang} />
+			<SectionContact lang={lang} />
 		</main>
 		<Footer />
 	</div>

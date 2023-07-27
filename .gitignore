@@ -129,4 +129,6 @@ public
 .yarn/install-state.gz
 .pnp.*
 
-ignore
+
+# extra toegevoegd
+ignore/

@@ -1,14 +1,14 @@
-#theme-backdrop{
-	transition:opacity .5s ease-in-out, background-color .5 ease-in-out;
-}
 html[data-theme="light"] {
-	& #theme-backdrop {
-		transition: background-color .5 ease-in-out;
-		background-color: #D9D2D1;
-		opacity:1;
+	& section {
+		border-bottom-color: #30262388;
 	}
-	& body{
-		background:white
+	& #theme-backdrop {
+		transition: background-color 0.3 ease-in-out;
+		background-color: #d9d2d1;
+		opacity: 1;
+	}
+	& body {
+		background: white;
 	}
 	& #sun-svg {
 		opacity: 1;
@@ -37,31 +37,25 @@ html[data-theme="light"] {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
 
-	/* #container{
-		background: linear-gradient(
-			180deg,
-			rgba(118, 143, 126, 0.2) 0%,
-			rgba(118, 143, 126, 0.2) 80%,
-			rgba(107, 137, 116, 0.2) 100%
-		);
-	} */
 	& #header-page {
-		background: #D9D2D1;
-		border-bottom:2px dashed #252525;
-	}
-	
-	& #header-page{
-		animation-name: mymove;
-		animation-duration: 1s;
-		animation-delay: .6s;
-	}
-	@keyframes mymove {
-		0% {background-color: transparent;}
-		50% {background-color:transparent;}
-		100% {background-color: #D9D2D1;}
+		background: #d9d2d1;
+		border-bottom: 2px dashed #252525;
 	}
 
-	& #Hi {
+	& #section-hi {
+		& .logo {
+			filter: invert(0.5) saturate(1);
+			animation-name: blinkbiglogo;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+	}
+	& #homelink {
+		filter: invert(1);
+	}
+
+	& #section-hi,
+	#section-skills {
 		background: linear-gradient(
 			180deg,
 			transparent 0%,
@@ -69,8 +63,9 @@ html[data-theme="light"] {
 			rgba(0, 0, 0, 0.05) 100%
 		);
 	}
-	
-	& #Past {
+
+	& #section-past,
+	#section-contact {
 		background: linear-gradient(
 			180deg,
 			rgba(0, 0, 0, 0.05) 0%,
@@ -78,41 +73,59 @@ html[data-theme="light"] {
 			transparent 100%
 		);
 	}
-	
-	& #Skills {
-		background: linear-gradient(
-			180deg,
-			transparent 0%,
-			transparent 80%,
-			rgba(0, 0, 0, 0.05) 100%
-		);
+	& #skilltree .arrow-guide path {
+		fill: #e35508;
 	}
 
-	& #skilltree .arrow-guide path{
-		fill:#e35508;
-	}
-
-	#nav-top a {
+	& #nav-top a {
 		text-shadow: rgba(255, 255, 255, 0.5) 0 0 1px;
 	}
-	
-	#nav-accessibility-language svg path,
+
+	& #nav-accessibility-language svg path,
 	#sun-svg path,
 	#moon-svg path {
-		fill: #252525
+		fill: #252525;
 	}
-	#pages a:hover,
+	& #pages a:hover,
 	#pages a:focus,
 	#page a:active,
 	#page .active {
 		border-color: #252525;
 	}
-	#homelink img.dark{
-		display:block;
-		opacity:1;
+	& footer a,
+	#section-contact a {
+		text-shadow: 0 0 1px white;
 	}
-	#homelink img.light{
-		display:none;
-		opacity:0
+	& #skilltree {
+		& .li-level-2 {
+			& h4 {
+				color: #7b6f6f;
+			}
+		}
+	}
+}
+@keyframes blinkbiglogo {
+	0% {
+		filter: invert(0.3);
+	}
+	50% {
+		filter: invert(0.8);
+	}
+	100% {
+		filter: invert(0.3);
+	}
+}
+
+@media (--viewport-s) {
+	@keyframes blinkbiglogo {
+		0% {
+			filter: invert(0.2);
+		}
+		50% {
+			filter: invert(0.4);
+		}
+		100% {
+			filter: invert(0.2);
+		}
 	}
 }
