@@ -69,7 +69,7 @@
 	padding-bottom: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-	min-width:320px;
+	min-width: 320px;
 	@media (--viewport-m) {
 		padding-left: 0;
 		padding-right: 0;
