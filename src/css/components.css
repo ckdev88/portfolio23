@@ -188,7 +188,7 @@ article.grid-container {
 				height: 7rem;
 			}
 			@media (--viewport-xs) {
-				height: 5rem;
+				height: 6rem;
 			}
 			&:hover {
 				& .overlay-badges {

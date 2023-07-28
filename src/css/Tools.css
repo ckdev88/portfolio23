@@ -10,14 +10,13 @@
 		overflow: hidden;
 		align-items: center;
 	}
-	.tool-item-wrapper {
+	& .tool-item-wrapper {
 		border-radius: 50%;
 		background-color: #fff;
-		padding:0.25rem;
+		padding: 0.25rem;
 		object-fit: contain;
 		display: block;
 		width: auto;
-		height: 5rem;
 		line-height: 5rem;
 		width: 5rem;
 		height: 5rem;

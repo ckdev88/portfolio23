@@ -92,8 +92,7 @@ img.skilltree {
 		&:first-child {
 			border-top: 0;
 		}
-		&:hover {
-		}
+
 		@media (--viewport-xl) {
 			display: grid;
 		}
@@ -111,9 +110,6 @@ img.skilltree {
 				@media (--viewport-m) {
 					height: 8rem;
 					width: auto;
-				}
-				@media (--viewport-s) {
-					height: 5rem;
 				}
 			}
 		}
