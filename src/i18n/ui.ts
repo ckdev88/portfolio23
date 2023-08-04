@@ -22,9 +22,9 @@ export const ui = {
 			"Meer dan 15 jaar professionele ervaring als front-end ontwikkelaar, werkend aan digitale producten van promotionele websites tot enterprise webshops.",
 		"hi-p2":
 			"Gespecialiseerd in front-end ontwikkeling, met toegankelijkheid, performance and gebruikersgemakt als prioriteiten, zodat het eindproduct zo inclusief mogelijk is.",
-		"past.head": "Some of my work.",
+		"past.head": "Mijn werk, projecten en werkgevers.",
 		"past.p":
-			"Below you can see a selection of some of my employers, jobs, projects	and applied skills.",
+			"Een greep uit projecten waaraan ik heb gewerkt, met de daarbij horende vaardigheden.",
 		"past-1-h3": "",
 		"past-1-h3-sub": "",
 		"past-1-p":
