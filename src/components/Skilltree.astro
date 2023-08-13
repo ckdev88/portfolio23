@@ -51,8 +51,8 @@ import Tools from "./Tools.astro";
 				<li class="preprocessors li-level-2">
 					<h4>Processors</h4>
 					<ul class="ul-level-3">
+						<SkilltreeItem skill="htmx" />
 						<SkilltreeItem skill="PHP" />
-						<SkilltreeItem skill="WordPress" />
 					</ul>
 				</li>
 				<li class="email li-level-2">
@@ -75,8 +75,8 @@ import Tools from "./Tools.astro";
 				heading="CSS"
 				name="CSS 3"
 				classname="large"
-				w="102"
-				h="115"
+				w="89"
+				h="100"
 			/>
 			<ul class="ul-level-2">
 				<li class="fundamentals li-level-2">
@@ -113,8 +113,8 @@ import Tools from "./Tools.astro";
 				heading="JavaScript"
 				name="JavaScript"
 				classname="large"
-				w="102"
-				h="115"
+				w="89"
+				h="100"
 			/>
 			<ul class="ul-level-2">
 				<li class="fundamentals li-level-2">
@@ -125,11 +125,11 @@ import Tools from "./Tools.astro";
 					</ul>
 				</li>
 				<li class="task-runners li-level-2">
-					<h4>Tasks &amp; Testing</h4>
+					<h4>Bundlers</h4>
 					<ul class="ul-level-3">
-						<SkilltreeItem skill="Node" />
+						<SkilltreeItem skill="Vite" />
+						<SkilltreeItem skill="WebPack" />
 						<SkilltreeItem skill="Gulp" />
-						<SkilltreeItem skill="Jest" />
 					</ul>
 				</li>
 				<li class="framework li-level-2">
@@ -138,7 +138,37 @@ import Tools from "./Tools.astro";
 						<SkilltreeItem skill="Astro" />
 						<SkilltreeItem skill="Vue" />
 						<SkilltreeItem skill="React" />
-						<SkilltreeItem skill="Svelte" />
+					</ul>
+				</li>
+			</ul>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="arrow-guide">
+				<path d="M 0 0 L 0 12 L 9 6 z" stroke="colourname" fill="url(#fill)"
+				></path>
+			</svg>
+		</li>
+		<li id="st-workflow" class="li-level-1">
+			<SkilltreeCat
+				img="../img/javascript-logo.svg"
+				heading="Workflow"
+				name="Workflow"
+				classname="large"
+				w="89"
+				h="100"
+			/>
+			<ul class="ul-level-2">
+				<li class="fundamentals li-level-2">
+					<h4>Fundamentals</h4>
+					<ul class="ul-level-3">
+						<SkilltreeItem skill="EcmaScript" />
+						<SkilltreeItem skill="TypeScript" />
+					</ul>
+				</li>
+				<li class="task-runners li-level-2"></li>
+				<li class="framework li-level-2">
+					<h4>Back end platforms</h4>
+					<ul class="ul-level-3">
+						<SkilltreeItem skill="Supabase" />
+						<SkilltreeItem skill="Firebase" />
 					</ul>
 				</li>
 			</ul>
