@@ -9,23 +9,81 @@ export type Json =
 export interface Database {
 	public: {
 		Tables: {
+			as_groups: {
+				Row: {
+					created_at: string | null
+					created_by: string | null
+					id: string
+					name: string
+				}
+				Insert: {
+					created_at?: string | null
+					created_by?: string | null
+					id?: string
+					name: string
+				}
+				Update: {
+					created_at?: string | null
+					created_by?: string | null
+					id?: string
+					name?: string
+				}
+				Relationships: []
+			}
+			as_members: {
+				Row: {
+					group_id: string | null
+					id: string
+					name: string
+					selected_by: string | null
+				}
+				Insert: {
+					group_id?: string | null
+					id?: string
+					name: string
+					selected_by?: string | null
+				}
+				Update: {
+					group_id?: string | null
+					id?: string
+					name?: string
+					selected_by?: string | null
+				}
+				Relationships: [
+					{
+						foreignKeyName: "as_members_group_id_fkey"
+						columns: ["group_id"]
+						referencedRelation: "as_groups"
+						referencedColumns: ["id"]
+					}
+				]
+			}
 			pf_visits: {
 				Row: {
+					country: string | null
 					created_at: string
 					id: number
 					ip: string | null
+					la: number | null
+					lo: number | null
 					url: string | null
 				}
 				Insert: {
+					country?: string | null
 					created_at?: string
 					id?: number
 					ip?: string | null
+					la?: number | null
+					lo?: number | null
 					url?: string | null
 				}
 				Update: {
+					country?: string | null
 					created_at?: string
 					id?: number
 					ip?: string | null
+					la?: number | null
+					lo?: number | null
 					url?: string | null
 				}
 				Relationships: []
@@ -35,6 +93,12 @@ export interface Database {
 			[_ in never]: never
 		}
 		Functions: {
+			count_visits: {
+				Args: {
+					url: string
+				}
+				Returns: undefined
+			}
 			draw_name: {
 				Args: {
 					groupid: string

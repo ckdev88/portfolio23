@@ -1,14 +1,18 @@
 ---
+import supabase from "../supabase";
+const currentUrl = Astro.url.href;
+let { error } = await supabase.rpc('count_visits', {url: currentUrl})
+if (error) console.error(error)
 ---
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9XHX3QX55"
 ></script>
 <script type="application/javascript">
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag("js", new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+	dataLayer.push(arguments);
+}
+gtag("js", new Date());
 
-	gtag("config", "G-M9XHX3QX55");
+gtag("config", "G-M9XHX3QX55");
 </script>
