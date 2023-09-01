@@ -23,7 +23,10 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 		<title>{title}</title>
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="theme-color" content="#3367D6" />
-		<meta property="og:site_name" content="Cors, Front-end web developer." />
+		<meta
+			property="og:site_name"
+			content="Cors, Front-end web developer."
+		/>
 		<meta property="og:url" content="https://ckdev88.github.io" />
 		<meta property="og:type" content="website" />
 		<meta
@@ -44,12 +47,19 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 		<div id="theme-backdrop"></div>
 		<slot lang={lang} />
 		<script>
-			const scrollline = document.querySelector(".scroll-line");
+			const scrollline =
+				document.querySelector(".scroll-line");
 			function fillscrollline() {
 				const windowHeight = window.innerHeight;
-				const fullHeight = document.getElementById("container").clientHeight;
+				const fullHeight =
+					document.getElementById(
+						"container"
+					).clientHeight;
 				const scrolled = window.scrollY;
-				const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
+				const percentScrolled =
+					(scrolled /
+						(fullHeight - windowHeight)) *
+					100;
 				scrollline.style.width = percentScrolled + "%";
 			}
 			window.addEventListener("scroll", fillscrollline);
