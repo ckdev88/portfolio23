@@ -1,8 +1,8 @@
 module.exports = {
-	plugins: [
-		require('postcss-import'),
-		require('postcss-preset-env'),
-		require('postcss-mixins'),
-		// require('cssnano'),
-	]
-}
+  plugins: [
+    require("postcss-import"),
+    require("postcss-preset-env"),
+    require("postcss-mixins"),
+    // require('cssnano'),
+  ],
+};

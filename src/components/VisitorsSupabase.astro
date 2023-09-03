@@ -3,9 +3,9 @@ import supabase from "../supabase";
 const currentUrl = Astro.url.href;
 ---
 {
-	async function count(){
-		await 
+	async () => {
+		await
 			supabase.rpc('count_visits', { url: `${currentUrl}` });
-		return 
+		return
 	}
 }

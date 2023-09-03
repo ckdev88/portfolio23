@@ -1,6 +1,7 @@
 ---
 import VisitorsBlegh from "../components/VisitorsBlegh.astro";
 import VisitorsSupabase from "../components/VisitorsSupabase.astro";
+// import VisitorsSupabase from "../components/VisitorsSupabase.js";
 export interface Props {
 	title: string;
 	lang: string;
@@ -65,6 +66,6 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 			window.addEventListener("scroll", fillscrollline);
 		</script>
 		<VisitorsBlegh />
-		<VisitorsSupabase />
+		<VisitorsSupabase client:load />
 	</body>
 </html>
