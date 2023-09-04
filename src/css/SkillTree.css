@@ -63,7 +63,6 @@ img.skilltree {
       border-top: 1px dotted rgba(255, 255, 255, 0.2);
       grid-template-columns: 1fr 5fr;
       text-align: center;
-      /* background:red; */
       display: block;
     }
     @media (--viewport-s) {
@@ -113,6 +112,13 @@ img.skilltree {
           height: 8rem;
           width: auto;
         }
+      }
+    }
+  }
+  @media (--viewport-m) {
+    & .tool-item {
+      & img {
+        max-height: 5rem;
       }
     }
   }

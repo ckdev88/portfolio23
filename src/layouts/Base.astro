@@ -1,6 +1,6 @@
 ---
 import VisitorsBlegh from "../components/VisitorsBlegh.astro";
-import  Vs  from "../components/VisitorsSupabase.astro";
+// import Vs from "../components/VisitorsSupabase.astro";
 export interface Props {
 	title: string;
 	lang: string;
@@ -31,7 +31,7 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:title"
-			content="Cors | Frontend Developer & Accessibility specialist"
+			content="Cors | Senior Web Developer & Accessibility specialist"
 		/>
 		<meta
 			property="og:description"
@@ -47,26 +47,21 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 		<div id="theme-backdrop"></div>
 		<slot lang={lang} />
 		<script>
-			const scrollline =
-				document.querySelector(".scroll-line");
 			function fillscrollline() {
-				const windowHeight = window.innerHeight;
-				const fullHeight =
-					document.getElementById(
-						"container"
-					).clientHeight;
 				const scrolled = window.scrollY;
 				const percentScrolled =
 					(scrolled /
-						(fullHeight - windowHeight)) *
+						(document.getElementById(
+							"container",
+						).clientHeight -
+							window.innerHeight)) *
 					100;
-				scrollline.style.width = percentScrolled + "%";
+				document.querySelector(
+					".scroll-line",
+				).style.width = percentScrolled + "%";
 			}
 			window.addEventListener("scroll", fillscrollline);
 		</script>
 		<VisitorsBlegh />
-		<script>
-			await supabase.rpc('count_visits',{url:'blabla.com'}).single();
-		</script>
 	</body>
 </html>

@@ -82,6 +82,9 @@ h3 {
   margin-top: 0;
   padding-bottom: 1em;
 }
+#skilltree h3{
+  padding-bottom:.5em;
+}
 h3[onclick]:hover {
   cursor: pointer;
 }
