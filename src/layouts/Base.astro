@@ -1,7 +1,6 @@
 ---
 import VisitorsBlegh from "../components/VisitorsBlegh.astro";
-import VisitorsSupabase from "../components/VisitorsSupabase.astro";
-// import VisitorsSupabase from "../components/VisitorsSupabase.js";
+import  Vs  from "../components/VisitorsSupabase.astro";
 export interface Props {
 	title: string;
 	lang: string;
@@ -66,6 +65,8 @@ const logoSrc = "/img/ckdev-logo-light.svg";
 			window.addEventListener("scroll", fillscrollline);
 		</script>
 		<VisitorsBlegh />
-		<VisitorsSupabase client:load />
+		<script>
+			await supabase.rpc('count_visits',{url:'blabla.com'}).single();
+		</script>
 	</body>
 </html>

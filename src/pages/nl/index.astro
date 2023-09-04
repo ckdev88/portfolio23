@@ -8,6 +8,15 @@ import SectionContact from "../../components/SectionContact.astro";
 import Footer from "../../components/Footer.astro";
 
 const lang = "nl";
+
+// TODO: only works locally, but keep this code for now
+// import supabase from "../../supabase";
+// const currentUrl: string = Astro.request.url + 'NL';
+// await supabase
+// 	.rpc("count_visits", {
+// 		url: currentUrl,
+// 	})
+// 	.single();
 ---
 
 <Layout title="Cors, Front-end Developer." lang={lang}>
