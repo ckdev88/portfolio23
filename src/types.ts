@@ -60,30 +60,21 @@ export interface Database {
       };
       pf_visits: {
         Row: {
-          country: string | null;
           created_at: string;
           id: number;
           ip: string | null;
-          la: number | null;
-          lo: number | null;
           url: string | null;
         };
         Insert: {
-          country?: string | null;
           created_at?: string;
           id?: number;
           ip?: string | null;
-          la?: number | null;
-          lo?: number | null;
           url?: string | null;
         };
         Update: {
-          country?: string | null;
           created_at?: string;
           id?: number;
           ip?: string | null;
-          la?: number | null;
-          lo?: number | null;
           url?: string | null;
         };
         Relationships: [];
