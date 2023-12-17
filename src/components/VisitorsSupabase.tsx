@@ -1,4 +1,5 @@
-import supabase from "../supabase";
+// TODO: use or remove
+import supabase from '../supabase';
 // werkt, maar lokaal en beetje ruk
 // const currentUrl = 'jajajaja9';
 // type InfoProps = {
