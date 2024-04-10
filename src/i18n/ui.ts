@@ -28,7 +28,7 @@ export const ui = {
     "past-1-h3": "",
     "past-1-h3-sub": "",
     "past-1-p":
-      "Took some time to take on various private projects, while doing some small projects on the side, using a variety of frameworks and techniques.",
+      "Took some time to take on various private projects, using a variety of frameworks and techniques.",
     "past-2-h3": "Visma PlusPort",
     "past-2-h3-sub": "2017 - 2021",
     "past-2-p":
