@@ -50,7 +50,7 @@ export const ui = {
     "hi-h1": "Hi, my name is Cors,",
     "hi-h1-sub": "Front-end web developer.",
     "hi-p":
-      "I love to build stuff.<br/> For more than 15 years I have been building digital products for businesses ranging from simple promotional websites to enterprise webshops.",
+      "I love to build stuff. For more than 15 years I have been building digital products for businesses ranging from simple promotional websites to enterprise webshops.",
     "hi-p2":
       "Specialized in front-end development, with accessibility, performance and ease of use as priorities, so the end result is as inclusive as possible, resulting in more reach, engagement, higher conversion rates, more sales.",
     "past.head": "Some of my work.",
