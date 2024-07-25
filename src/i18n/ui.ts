@@ -67,13 +67,13 @@ export const ui = {
     "nav.JumpTo": "Saltar para",
     "ui.Accessibility": "Accessibility",
     "hi-h1": "Ola, eu sou Cors,",
-    "hi-h1-sub": "Front-end web desenvolvedor.",
+    "hi-h1-sub": "Web consultant, senior web desenvolvedor.",
     "hi-p":
       "More than 15 years of professional experience building products for businesses ranging from simple promotional websites to enterprise webshops.",
     "hi-p2":
       "Specialized in front-end development, with accessibility, performance and ease of use as priorities, so the end result is as inclusive as possible.",
     "past.head": "Some of my work.",
     "past.p":
-      "Below you can see a selection of some of my employers, jobs, projects	and applied skills.",
+      "Below you can see a selection of some of my employers, jobs, projects and applied skills.",
   },
 } as const;
