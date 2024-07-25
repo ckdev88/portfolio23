@@ -1,6 +1,6 @@
 {
 	"short_name": "Portfolio Cors",
-	"name": "Portfolio Web developer & consultant Cors",
+	"name": "Portfolio Web consultant & software developer Cors",
 
 	"icons": [
 		{
@@ -51,7 +51,7 @@
 		}
 	],
 
-	"description": "Portfolio mini website for Cors, web developer & consultant.",
+	"description": "Portfolio mini website for Cors, web consultant & software developer.",
 	"theme_color": "#3367D6",
 	"lang": "en-US",
 	"background_color": "#3367D6",
