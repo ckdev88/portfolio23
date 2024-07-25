@@ -48,7 +48,7 @@ export const ui = {
     "lt.JumpTo": "Jump to",
     "ui.Accessibility": "Accessibility",
     "hi-h1": "Hi, my name is Cors,",
-    "hi-h1-sub": "Front-end web developer.",
+    "hi-h1-sub": "Web consultant.",
     "hi-p":
       "I love to build stuff. For more than 15 years I have been building digital products for businesses ranging from simple promotional websites to enterprise webshops.",
     "hi-p2":
