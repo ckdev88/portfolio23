@@ -17,11 +17,11 @@ export const ui = {
     "lt.JumpTo": "Spring naar",
     "ui.Accessibility": "Toegankelijkheid",
     "hi-h1": "Hoi, ik ben Cors,",
-    "hi-h1-sub": "Front-end web developer.",
+    "hi-h1-sub": "Web consultant.",
     "hi-p":
-      "Meer dan 15 jaar professionele ervaring als front-end ontwikkelaar, werkend aan digitale producten van promotionele websites tot enterprise webshops.",
+      "Meer dan 15 jaar professionele ervaring als full stack online software ontwikkelaar, werkend aan digitale producten van promotionele websites tot enterprise webshops.",
     "hi-p2":
-      "Gespecialiseerd in front-end ontwikkeling, met toegankelijkheid, performance and gebruikersgemakt als prioriteiten, zodat het eindproduct zo inclusief mogelijk is.",
+      "Gespecialiseerd in front-end ontwikkeling, met toegankelijkheid, performance en gebruikersgemak als prioriteiten, zodat het eindproduct zo inclusief mogelijk is.",
     "past.head": "Mijn werk, projecten en werkgevers.",
     "past.p":
       "Een greep uit projecten waaraan ik heb gewerkt, met de daarbij horende vaardigheden.",
