@@ -16,7 +16,7 @@ export const ui = {
     "nav.Contact": "Contact",
     "lt.JumpTo": "Spring naar",
     "ui.Accessibility": "Toegankelijkheid",
-    "hi-h1": "Hoi, ik ben Cors,",
+    "hi-h1": "Ik ben Cors,",
     "hi-h1-sub": "Web consultant.",
     "hi-p":
       "Meer dan 15 jaar professionele ervaring als full stack online software ontwikkelaar, werkend aan digitale producten van promotionele websites tot enterprise webshops.",
