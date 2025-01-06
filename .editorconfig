@@ -10,19 +10,10 @@ end_of_line = lf
 insert_final_newline = true
 indent_style = tab
 indent_size = 4
-max-line-length = 80
-
 
 # Space indentation
 [*.py]
 indent_style = space
-
-# Indentation override for all JS, CSS, Lua files
-[*.{js,css,lua,html}]
-indent_size = 2
-
-[*.astro]
-indent-size=2
 
  [*# Matches the exact files either package.json or .travis.yml
 [{package.json,.travis.yml}]
