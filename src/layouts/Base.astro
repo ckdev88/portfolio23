@@ -41,17 +41,8 @@ const logoSrc = '/img/ckdev-logo-light.svg';
 		<div id="theme-backdrop"></div>
 		<slot lang={lang} />
 		<script>
-			function fillscrollline() {
-				const scrolled = window.scrollY;
-				const percentScrolled =
-					(scrolled /
-						(document.getElementById('container').clientHeight -
-							window.innerHeight)) *
-					100;
-				document.querySelector('.scroll-line').style.width =
-					percentScrolled + '%';
-			}
-			window.addEventListener('scroll', fillscrollline);
+			import fillScrollLine from '../script';
+			fillScrollLine();
 		</script>
 		<VisitorsBlegh />
 	</body>
