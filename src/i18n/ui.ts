@@ -1,6 +1,6 @@
 export const languages = {
-	nl: 'NL', //Nederlands
-	en: 'EN', //English
+	nl: 'NL',
+	en: 'EN',
 	// pt: "PT", //Português
 };
 
