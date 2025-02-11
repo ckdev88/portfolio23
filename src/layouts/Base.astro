@@ -1,13 +1,11 @@
 ---
 import VisitorsBlegh from '../components/VisitorsBlegh.astro';
-// import Vs from "../components/VisitorsSupabase.astro";
 export interface Props {
 	title: string;
 	lang: string;
 }
 const { title, lang } = Astro.props;
-
-const logoSrc = '/img/ckdev-logo-light.svg';
+const logoSrc = '../img/ckdev-logo-light.svg';
 ---
 
 <html id="html" lang={lang} data-theme="dark">

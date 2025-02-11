@@ -55,7 +55,7 @@ export const ui = {
 			'Specialized in front-end development, with accessibility, performance and ease of use as priorities, so the end result is as inclusive as possible, resulting in more reach, engagement, higher conversion rates, more sales.',
 		'past.head': 'Some of my work.',
 		'past.p':
-			'Below you can see a selection of some of my employers, jobs, projects	and applied skills.',
+			'A selection of some of my employers, jobs, projects and applied skills.',
 	},
 	pt: {
 		'nav.Hi': 'Ola',
