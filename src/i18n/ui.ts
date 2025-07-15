@@ -18,7 +18,7 @@ export const ui = {
 		'ui.Accessibility': 'Toegankelijkheid',
 		'hi-h1': 'Cornelis,',
 		'hi-h1-sub': 'Front-end engineer.',
-		'hi-p': 'Meer dan 15 jaar professionele ervaring als full stack online software ontwikkelaar, werkend aan digitale producten van promotionele websites tot enterprise webshops.',
+		'hi-p': 'Meer dan 15 jaar professionele ervaring als full stack online software ontwikkelaar, werkend aan digitale producten van promotionele campagnes tot enterprise software.',
 		'hi-p2':
 			'Gespecialiseerd in front-end ontwikkeling, met toegankelijkheid, performance en gebruikersgemak als prioriteiten, zodat het eindproduct zo inclusief mogelijk is.',
 		'past.head': 'Mijn werk, projecten en werkgevers.',
@@ -48,7 +48,7 @@ export const ui = {
 		'ui.Accessibility': 'Accessibility',
 		'hi-h1': 'Hi, my name is Cornelis,',
 		'hi-h1-sub': 'Front-end engineer.',
-		'hi-p': 'I love to build programs. For more than 15 years I have been building digital products for businesses ranging from promotions to enterprise software.',
+		'hi-p': 'I love to build programs. For more than 15 years I have been building digital products for businesses ranging from promotional campaigns to enterprise software.',
 		'hi-p2':
 			'Specialized in front-end development, with accessibility, performance and ease of use as priorities, so the end result is as inclusive as possible, resulting in more reach, engagement, higher conversion rates, more sales.',
 		'past.head': 'Some of my work.',
@@ -66,7 +66,7 @@ export const ui = {
 		'ui.Accessibility': 'Accessibility',
 		'hi-h1': 'Ola, eu sou Cornelis,',
 		'hi-h1-sub': 'Front-end engineer.',
-		'hi-p': 'I love to build programs. For more than 15 years I have been building digital products for businesses ranging from promotions to enterprise software.',
+		'hi-p': 'I love to build programs. For more than 15 years I have been building digital products for businesses ranging from promotional campaigns to enterprise software.',
 		'hi-p2':
 			'Specialized in front-end development, with accessibility, performance and ease of use as priorities, so the end result is as inclusive as possible.',
 		'past.head': 'Some of my work.',
