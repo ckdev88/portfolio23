@@ -14,7 +14,11 @@ import BadgeItem from "./BadgeItem.astro";
 		})
 		}
 	</ul>
-	{link ?? <a class="griditemlink" href={link} target="_blank"></a> }
+	{
+	link && (
+	<a class="griditemlink" href={link} target="_blank"></a>
+	)
+	}
 </div>
 
 <style></style>
